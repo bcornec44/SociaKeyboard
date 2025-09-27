@@ -323,7 +323,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
     public void onVisibilityChanged(@NonNull final View view, final int visibility) {
         super.onVisibilityChanged(view, visibility);
         if (view == this)
-            // workaround for a bug with inline suggestions views that just keep showing up otherwise, https://github.com/Helium314/HeliBoard/pull/386
+            // workaround for a bug with inline suggestions views that just keep showing up otherwise, https://github.com/Helium314/SociaKeyboard/pull/386
             mSuggestionsStrip.setVisibility(visibility);
     }
 
@@ -754,10 +754,9 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
             word = null;
         }
         if (word != null && mListener != null) {
-            // Remplacement de toUpperCase par translateTo (asynchrone)
             kotlinx.coroutines.BuildersKt.launch(
                 kotlinx.coroutines.GlobalScope.INSTANCE,
-                kotlinx.coroutines.Dispatchers.getMain(), // FIX: collect on main thread for UI safety
+                kotlinx.coroutines.Dispatchers.getMain(),
                 kotlinx.coroutines.CoroutineStart.DEFAULT,
                 (scope, cont) -> helium314.keyboard.latin.utils.TranslatorUtils.translateTo("en", word).collect(
                         (value, continuation) -> {
