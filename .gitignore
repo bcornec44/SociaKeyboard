@@ -10,3 +10,4 @@ app/release
 app/.cxx
 fastlane/Appfile
 tools/*.txt
+.kotlin/sessions/kotlin-compiler-3002621600790878553.salive

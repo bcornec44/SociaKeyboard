@@ -1011,4 +1011,6 @@ New dictionary:
     <string name="translate_jp">Traduire en japonais</string>
     <string name="flag_fr">Français</string>
     <string name="flag_en">Anglais</string>
+    <string name="flag_es">Espagnol</string>
+    <string name="flag_cn">Chinois</string>
 </resources>

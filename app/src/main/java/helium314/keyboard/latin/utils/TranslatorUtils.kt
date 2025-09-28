@@ -1,16 +1,23 @@
 package helium314.keyboard.latin.utils
 
+import android.inputmethodservice.InputMethodService
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlin.OptIn
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
+import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.io.IOException
+import helium314.keyboard.latin.LatinIME
 
 object TranslatorUtils {
 
@@ -41,4 +48,19 @@ object TranslatorUtils {
     }.catch { e ->
         emit("Error: ${e.message}")
     }.flowOn(Dispatchers.IO)
+
+    /**
+     * Java-friendly helper: launch a coroutine on Main and collect the translation Flow,
+     * replacing the input text via LatinIME for each emitted value.
+     * Returns the Job so the caller may cancel if needed.
+     */
+    @OptIn(DelicateCoroutinesApi::class)
+    @JvmStatic
+    fun translateAndReplace(language: String, content: String, inputMethodService: InputMethodService): Job {
+        return GlobalScope.launch(Dispatchers.Main) {
+            translateTo(language, content).collect { value ->
+                LatinIME.replaceInputText(inputMethodService, value)
+            }
+        }
+    }
 }

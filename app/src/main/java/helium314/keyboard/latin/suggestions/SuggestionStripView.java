@@ -38,6 +38,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import android.inputmethodservice.InputMethodService;
 import helium314.keyboard.accessibility.AccessibilityUtils;
 import helium314.keyboard.keyboard.Keyboard;
 import helium314.keyboard.keyboard.KeyboardSwitcher;
@@ -47,6 +48,7 @@ import helium314.keyboard.keyboard.internal.KeyboardIconsSet;
 import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
 import helium314.keyboard.latin.AudioAndHapticFeedbackManager;
 import helium314.keyboard.latin.Dictionary;
+import helium314.keyboard.latin.LatinIME;
 import helium314.keyboard.latin.R;
 import helium314.keyboard.latin.SuggestedWords;
 import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
@@ -65,6 +67,9 @@ import helium314.keyboard.latin.utils.ToolbarKey;
 import helium314.keyboard.latin.utils.ToolbarUtilsKt;
 import helium314.keyboard.latin.utils.TranslatorUtils;
 
+import kotlinx.coroutines.DelicateCoroutinesApi;
+import kotlin.OptIn;
+
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -72,6 +77,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+@OptIn(markerClass = kotlinx.coroutines.DelicateCoroutinesApi.class)
 public final class SuggestionStripView extends RelativeLayout implements OnClickListener,
         OnLongClickListener, SharedPreferences.OnSharedPreferenceChangeListener {
     public interface Listener {
@@ -104,6 +110,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
     private final ArrayList<TextView> mDebugInfoViews = new ArrayList<>();
 
     Listener mListener;
+    private InputMethodService mInputMethodService;
     private SuggestedWords mSuggestedWords = SuggestedWords.getEmptyInstance();
     private int mStartIndexOfMoreSuggestions;
     private int mRtl = 1; // 1 if LTR, -1 if RTL
@@ -160,13 +167,24 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         // Ajout récupération des boutons de drapeaux
         ImageButton mFlagFrButton = findViewById(R.id.flag_fr);
         ImageButton mFlagEnButton = findViewById(R.id.flag_en);
+        ImageButton mFlagEsButton = findViewById(R.id.flag_es);
+        ImageButton mFlagCnButton = findViewById(R.id.flag_cn);
         if (mFlagFrButton != null) {
             mFlagFrButton.setImageResource(R.drawable.ic_flag_fr);
-            mFlagFrButton.setOnClickListener(v -> handleFlagClick());
+            mFlagFrButton.setOnClickListener(v -> handleFlagClick("fr"));
         }
         if (mFlagEnButton != null) {
             mFlagEnButton.setImageResource(R.drawable.ic_flag_us_uk);
-            mFlagEnButton.setOnClickListener(v -> handleFlagClick());
+            // pass the friendly string "english" as requested; the method will map to the code used by the translator
+            mFlagEnButton.setOnClickListener(v -> handleFlagClick("english"));
+        }
+        if (mFlagEsButton != null) {
+            mFlagEsButton.setImageResource(R.drawable.ic_flag_sp);
+            mFlagEsButton.setOnClickListener(v -> handleFlagClick("es"));
+        }
+        if (mFlagCnButton != null) {
+            mFlagCnButton.setImageResource(R.drawable.ic_flag_cn);
+            mFlagCnButton.setOnClickListener(v -> handleFlagClick("zh"));
         }
 
         final Typeface customTypeface = Settings.getInstance().getCustomTypeface();
@@ -240,8 +258,9 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         colors.setColor(mToolbarExpandKey, ColorType.TOOL_BAR_EXPAND_KEY);
         mToolbarExpandKey.setBackground(new ShapeDrawable(new OvalShape())); // ShapeDrawable color is black, need src_atop filter
         mToolbarExpandKey.getBackground().setColorFilter(colors.get(ColorType.TOOL_BAR_EXPAND_KEY_BACKGROUND), PorterDuff.Mode.SRC_ATOP);
-        mToolbarExpandKey.getLayoutParams().height *= (int) 0.82; // shrink the whole key a little (drawable not affected)
-        mToolbarExpandKey.getLayoutParams().width *= (int) 0.82;
+        // shrink the whole key a little (drawable not affected)
+        mToolbarExpandKey.getLayoutParams().height = (int)(mToolbarExpandKey.getLayoutParams().height * 0.82f);
+        mToolbarExpandKey.getLayoutParams().width = (int)(mToolbarExpandKey.getLayoutParams().width * 0.82f);
 
         for (final ToolbarKey pinnedKey : ToolbarUtilsKt.getPinnedToolbarKeys(prefs)) {
             final ImageButton button = createToolbarKey(context, iconsSet, pinnedKey);
@@ -268,6 +287,9 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
     public void setListener(final Listener listener, final View inputView) {
         mListener = listener;
         mMainKeyboardView = inputView.findViewById(R.id.keyboard_view);
+        if (listener instanceof InputMethodService) {
+            mInputMethodService = (InputMethodService) listener;
+        }
     }
 
     private void updateKeys() {
@@ -746,35 +768,17 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
         colors.setBackground(view, ColorType.STRIP_BACKGROUND);
     }
 
-    private void handleFlagClick() {
-        final String word;
-        if (mSuggestedWords != null && !mSuggestedWords.isEmpty()) {
-            word = mSuggestedWords.getWord(0);
-        } else {
-            word = null;
+    private void handleFlagClick(final String language) {
+        // Normalize friendly language names to language codes expected by TranslatorUtils
+        if (language == null || mInputMethodService == null) {
+            return;
         }
-        if (word != null && mListener != null) {
-            kotlinx.coroutines.BuildersKt.launch(
-                kotlinx.coroutines.GlobalScope.INSTANCE,
-                kotlinx.coroutines.Dispatchers.getMain(),
-                kotlinx.coroutines.CoroutineStart.DEFAULT,
-                (scope, cont) -> helium314.keyboard.latin.utils.TranslatorUtils.translateTo("en", word).collect(
-                        (value, continuation) -> {
-                            SuggestedWordInfo info = new SuggestedWordInfo(
-                                value,
-                                null,
-                                1,
-                                SuggestedWordInfo.KIND_TYPED,
-                                null,
-                                -1,
-                                -1
-                            );
-                            mListener.pickSuggestionManually(info);
-                            return kotlin.Unit.INSTANCE;
-                        },
-                    cont
-                )
-            );
-        }
-    }
-}
+        String inputText = LatinIME.getInputText(mInputMethodService);
+
+        if (!TextUtils.isEmpty(inputText) && mListener != null) {
+            // Use the Java-friendly helper in TranslatorUtils which launches a coroutine and
+            // collects the Flow, replacing input text on the Main dispatcher.
+            TranslatorUtils.translateAndReplace(language, inputText, mInputMethodService);
+         }
+     }
+ }

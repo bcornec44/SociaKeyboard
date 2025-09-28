@@ -81,6 +81,20 @@
                 android:src="@drawable/ic_flag_us_uk"
                 android:contentDescription="@string/flag_en"
                 android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/flag_es"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_flag_sp"
+                android:contentDescription="@string/flag_es"
+                android:background="@android:color/transparent"/>
+            <ImageButton
+                android:id="@+id/flag_cn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_flag_cn"
+                android:contentDescription="@string/flag_cn"
+                android:background="@android:color/transparent"/>
         </LinearLayout>
     </LinearLayout>
 </merge>
