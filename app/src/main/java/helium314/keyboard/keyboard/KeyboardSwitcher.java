@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -27,30 +27,30 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.event.Event;
-import helium314.keyboard.keyboard.KeyboardLayoutSet.KeyboardLayoutSetException;
-import helium314.keyboard.keyboard.clipboard.ClipboardHistoryView;
-import helium314.keyboard.keyboard.emoji.EmojiPalettesView;
-import helium314.keyboard.keyboard.internal.KeyboardState;
-import helium314.keyboard.latin.InputView;
-import helium314.keyboard.latin.KeyboardWrapperView;
-import helium314.keyboard.latin.LatinIME;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodManager;
-import helium314.keyboard.latin.RichInputMethodSubtype;
-import helium314.keyboard.latin.WordComposer;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.suggestions.SuggestionStripView;
-import helium314.keyboard.latin.utils.CapsModeUtils;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.LanguageOnSpacebarUtils;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.RecapitalizeStatus;
-import helium314.keyboard.latin.utils.ResourceUtils;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils;
-import helium314.keyboard.latin.utils.SubtypeUtilsAdditional;
+import com.keyfluent.keyboard.event.Event;
+import com.keyfluent.keyboard.keyboard.KeyboardLayoutSet.KeyboardLayoutSetException;
+import com.keyfluent.keyboard.keyboard.clipboard.ClipboardHistoryView;
+import com.keyfluent.keyboard.keyboard.emoji.EmojiPalettesView;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardState;
+import com.keyfluent.keyboard.latin.InputView;
+import com.keyfluent.keyboard.latin.KeyboardWrapperView;
+import com.keyfluent.keyboard.latin.LatinIME;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodManager;
+import com.keyfluent.keyboard.latin.RichInputMethodSubtype;
+import com.keyfluent.keyboard.latin.WordComposer;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.suggestions.SuggestionStripView;
+import com.keyfluent.keyboard.latin.utils.CapsModeUtils;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.LanguageOnSpacebarUtils;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.RecapitalizeStatus;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsAdditional;
 
 public final class KeyboardSwitcher implements KeyboardState.SwitchActions {
     private static final String TAG = KeyboardSwitcher.class.getSimpleName();

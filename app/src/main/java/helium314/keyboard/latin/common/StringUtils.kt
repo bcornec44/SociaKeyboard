@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin.common
+package com.keyfluent.keyboard.latin.common
 
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.common.StringUtils.mightBeEmoji
-import helium314.keyboard.latin.common.StringUtils.newSingleCodePointString
-import helium314.keyboard.latin.settings.SpacingAndPunctuations
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.common.StringUtils.mightBeEmoji
+import com.keyfluent.keyboard.latin.common.StringUtils.newSingleCodePointString
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations
 import java.math.BigInteger
 import java.util.Locale
 

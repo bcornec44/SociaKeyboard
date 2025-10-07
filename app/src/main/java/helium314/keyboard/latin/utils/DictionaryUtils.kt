@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
 import androidx.compose.material3.Text
@@ -10,14 +10,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.core.content.edit
-import helium314.keyboard.compat.locale
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.Links
-import helium314.keyboard.latin.common.LocaleUtils
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.settings.dialogs.ConfirmationDialog
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.Links
+import com.keyfluent.keyboard.latin.common.LocaleUtils
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.settings.dialogs.ConfirmationDialog
 import java.io.File
 import java.util.Locale
 

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.settings;
+package com.keyfluent.keyboard.latin.settings;
 
 import android.Manifest;
 import android.content.Context;
@@ -19,26 +19,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.TypedValueCompat;
 
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.keyboard.KeyboardTheme;
-import helium314.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfosKt;
-import helium314.keyboard.latin.InputAttributes;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodManager;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.permissions.PermissionsUtil;
-import helium314.keyboard.latin.utils.InputTypeUtils;
-import helium314.keyboard.latin.utils.JniUtils;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.SubtypeSettings;
-import helium314.keyboard.latin.utils.SubtypeUtilsKt;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.keyboard.KeyboardTheme;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfosKt;
+import com.keyfluent.keyboard.latin.InputAttributes;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodManager;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.permissions.PermissionsUtil;
+import com.keyfluent.keyboard.latin.utils.InputTypeUtils;
+import com.keyfluent.keyboard.latin.utils.JniUtils;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings;
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsKt;
 
 import java.util.List;
 import java.util.Locale;
 
 /**
  * When you call the constructor of this class, you may want to change the current system locale by
- * using {@link helium314.keyboard.latin.utils.RunInLocaleKt}.
+ * using {@link com.keyfluent.keyboard.latin.utils.RunInLocaleKt}.
  */
 // Non-final for testing via mock library.
 public class SettingsValues {

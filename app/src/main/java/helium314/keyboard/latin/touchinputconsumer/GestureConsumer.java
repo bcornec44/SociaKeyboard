@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.touchinputconsumer;
+package com.keyfluent.keyboard.latin.touchinputconsumer;
 
 import android.view.inputmethod.EditorInfo;
 
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.latin.DictionaryFacilitator;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.inputlogic.PrivateCommandPerformer;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.latin.DictionaryFacilitator;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.inputlogic.PrivateCommandPerformer;
 
 import java.util.Locale;
 

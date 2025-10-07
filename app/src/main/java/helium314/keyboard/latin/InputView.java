@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -16,13 +16,13 @@ import android.widget.ImageButton;
 
 import androidx.core.view.ViewKt;
 
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.keyboard.MainKeyboardView;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.suggestions.PopupSuggestionsView;
-import helium314.keyboard.latin.suggestions.SuggestionStripView;
-import helium314.keyboard.latin.utils.TranslatorUtils;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.keyboard.MainKeyboardView;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.suggestions.PopupSuggestionsView;
+import com.keyfluent.keyboard.latin.suggestions.SuggestionStripView;
+import com.keyfluent.keyboard.latin.utils.TranslatorUtils;
 import kotlin.Unit;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;

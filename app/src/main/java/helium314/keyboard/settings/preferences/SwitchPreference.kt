@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.preferences
+package com.keyfluent.keyboard.settings.preferences
 
 import androidx.compose.material3.Switch
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.SettingsActivity
 
 @Composable
 fun SwitchPreference(

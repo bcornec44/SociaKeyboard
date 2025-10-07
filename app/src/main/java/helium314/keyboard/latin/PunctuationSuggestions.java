@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.keyboard.internal.KeySpecParser;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.keyboard.internal.KeySpecParser;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.common.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.keyboard.clipboard
+package com.keyfluent.keyboard.keyboard.clipboard
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,29 +13,29 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import helium314.keyboard.keyboard.KeyboardActionListener
-import helium314.keyboard.keyboard.KeyboardId
-import helium314.keyboard.keyboard.KeyboardLayoutSet
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.keyboard.MainKeyboardView
-import helium314.keyboard.keyboard.PointerTracker
-import helium314.keyboard.keyboard.internal.KeyDrawParams
-import helium314.keyboard.keyboard.internal.KeyVisualAttributes
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.ClipboardHistoryManager
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.ColorType
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ResourceUtils
-import helium314.keyboard.latin.utils.ToolbarKey
-import helium314.keyboard.latin.utils.createToolbarKey
-import helium314.keyboard.latin.utils.getCodeForToolbarKey
-import helium314.keyboard.latin.utils.getCodeForToolbarKeyLongClick
-import helium314.keyboard.latin.utils.getEnabledClipboardToolbarKeys
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.latin.utils.setToolbarButtonsActivatedStateOnPrefChange
+import com.keyfluent.keyboard.keyboard.KeyboardActionListener
+import com.keyfluent.keyboard.keyboard.KeyboardId
+import com.keyfluent.keyboard.keyboard.KeyboardLayoutSet
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.keyboard.MainKeyboardView
+import com.keyfluent.keyboard.keyboard.PointerTracker
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams
+import com.keyfluent.keyboard.keyboard.internal.KeyVisualAttributes
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.ClipboardHistoryManager
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.ColorType
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ResourceUtils
+import com.keyfluent.keyboard.latin.utils.ToolbarKey
+import com.keyfluent.keyboard.latin.utils.createToolbarKey
+import com.keyfluent.keyboard.latin.utils.getCodeForToolbarKey
+import com.keyfluent.keyboard.latin.utils.getCodeForToolbarKeyLongClick
+import com.keyfluent.keyboard.latin.utils.getEnabledClipboardToolbarKeys
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.latin.utils.setToolbarButtonsActivatedStateOnPrefChange
 
 @SuppressLint("CustomViewStyleable")
 class ClipboardHistoryView @JvmOverloads constructor(

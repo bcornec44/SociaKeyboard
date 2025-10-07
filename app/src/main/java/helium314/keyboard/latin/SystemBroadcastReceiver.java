@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -15,14 +15,14 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Process;
 
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.Log;
 import android.view.inputmethod.InputMethodManager;
 
-import helium314.keyboard.keyboard.KeyboardLayoutSet;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.UncachedInputMethodManagerUtils;
-import helium314.keyboard.settings.SettingsActivity;
+import com.keyfluent.keyboard.keyboard.KeyboardLayoutSet;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.UncachedInputMethodManagerUtils;
+import com.keyfluent.keyboard.settings.SettingsActivity;
 
 /**
  * This class detects the {@link Intent#ACTION_MY_PACKAGE_REPLACED} broadcast intent when this IME

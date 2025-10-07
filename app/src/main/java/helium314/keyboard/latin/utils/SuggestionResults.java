@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.define.ProductionFlags;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.define.ProductionFlags;
 
 import java.util.ArrayList;
 import java.util.Collection;

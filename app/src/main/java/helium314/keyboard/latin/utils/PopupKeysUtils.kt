@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
-import helium314.keyboard.keyboard.Key
-import helium314.keyboard.keyboard.internal.KeySpecParser
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.rtlLabel
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.PopupSet
-import helium314.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.keyboard.Key
+import com.keyfluent.keyboard.keyboard.internal.KeySpecParser
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.rtlLabel
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.PopupSet
+import com.keyfluent.keyboard.latin.common.Constants.Separators
 
 const val POPUP_KEYS_NUMBER = "number"
 private const val POPUP_KEYS_LANGUAGE_PRIORITY = "language_priority"

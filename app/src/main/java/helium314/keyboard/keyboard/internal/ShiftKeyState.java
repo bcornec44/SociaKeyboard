@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 
 import androidx.annotation.NonNull;
 

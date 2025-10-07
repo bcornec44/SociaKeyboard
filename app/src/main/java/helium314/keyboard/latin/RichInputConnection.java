@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -17,9 +17,9 @@ import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.style.CharacterStyle;
 
-import helium314.keyboard.keyboard.KeyboardSwitcher;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.CorrectionInfo;
@@ -31,19 +31,19 @@ import android.view.inputmethod.InputMethodManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.common.StringUtilsKt;
-import helium314.keyboard.latin.common.UnicodeSurrogate;
-import helium314.keyboard.latin.inputlogic.PrivateCommandPerformer;
-import helium314.keyboard.latin.settings.SpacingAndPunctuations;
-import helium314.keyboard.latin.utils.CapsModeUtils;
-import helium314.keyboard.latin.utils.DebugLogUtils;
-import helium314.keyboard.latin.utils.NgramContextUtils;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.SpannableStringUtils;
-import helium314.keyboard.latin.utils.StatsUtils;
-import helium314.keyboard.latin.utils.TextRange;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.common.StringUtilsKt;
+import com.keyfluent.keyboard.latin.common.UnicodeSurrogate;
+import com.keyfluent.keyboard.latin.inputlogic.PrivateCommandPerformer;
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations;
+import com.keyfluent.keyboard.latin.utils.CapsModeUtils;
+import com.keyfluent.keyboard.latin.utils.DebugLogUtils;
+import com.keyfluent.keyboard.latin.utils.NgramContextUtils;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.SpannableStringUtils;
+import com.keyfluent.keyboard.latin.utils.StatsUtils;
+import com.keyfluent.keyboard.latin.utils.TextRange;
 
 import java.util.concurrent.TimeUnit;
 
@@ -339,7 +339,7 @@ public final class RichInputConnection implements PrivateCommandPerformer {
                 final int spanFlags = mTempObjectForCommitText.getSpanFlags(span);
                 // We have to adjust the end of the span to include an additional character.
                 // This is to avoid splitting a unicode surrogate pair.
-                // See helium314.keyboard.latin.common.Constants.UnicodeSurrogate
+                // See com.keyfluent.keyboard.latin.common.Constants.UnicodeSurrogate
                 // See https://b.corp.google.com/issues/19255233
                 if (0 < spanEnd && spanEnd < mTempObjectForCommitText.length()) {
                     final char spanEndChar = mTempObjectForCommitText.charAt(spanEnd - 1);
@@ -478,7 +478,7 @@ public final class RichInputConnection implements PrivateCommandPerformer {
             // 1. the app actively changes text field content, e.g. joplin when deleting list markers like "2."
             // 2. the app has outdated contents in the text field, e.g. com.farmerbb.notepad returns the
             //     just deleted char right after deletion, instead of the correct one
-            //     todo: understand where this inconsistent state comes from, is it really the other app's fault, or is it SociaKeyboard?
+            //     todo: understand where this inconsistent state comes from, is it really the other app's fault, or is it KeyFluent?
             Log.w(TAG, "cached text out of sync, reloading");
             reloadCursorPosition();
             reloadTextCache();
@@ -687,7 +687,7 @@ public final class RichInputConnection implements PrivateCommandPerformer {
             mIC.setComposingText(text, newCursorPosition);
             if (!Settings.getValues().mInputAttributes.mShouldShowSuggestions && text.length() > 0) {
                 // We have a field that disables suggestions, but still committed text is set.
-                // This might lead to weird bugs (e.g. https://github.com/Helium314/SociaKeyboard/issues/225), so better do
+                // This might lead to weird bugs (e.g. https://github.com/Keyfluent/KeyFluent/issues/225), so better do
                 // a sanity check whether the wanted text has been set.
                 // Note that the check may also fail because the text field is not yet updated, so we don't want to check everything!
                 final CharSequence lastChar = mIC.getTextBeforeCursor(1, 0);

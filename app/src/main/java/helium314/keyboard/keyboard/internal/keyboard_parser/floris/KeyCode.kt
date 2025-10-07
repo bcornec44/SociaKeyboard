@@ -3,7 +3,7 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0
  */
-package helium314.keyboard.keyboard.internal.keyboard_parser.floris
+package com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris
 
 import android.view.KeyEvent
 
@@ -123,7 +123,7 @@ object KeyCode {
 
     const val CJK_SPACE =                  12288
 
-    // sociakeyboard only codes
+    // keyfluent only codes
     const val SYMBOL_ALPHA =              -10001
     const val TOGGLE_ONE_HANDED_MODE =    -10002
     const val TOGGLE_ONE_HANDED_MODE_2 =  -10003 // does the same as TOGGLE_ONE_HANDED_MODE (used to be start & stop)
@@ -179,7 +179,7 @@ object KeyCode {
         MOVE_START_OF_PAGE, MOVE_END_OF_PAGE, SHIFT, CAPS_LOCK, MULTIPLE_CODE_POINTS, UNSPECIFIED, CTRL, ALT,
         FN, CLIPBOARD_CLEAR_HISTORY, NUMPAD,
 
-        // sociakeyboard only
+        // keyfluent only
         SYMBOL_ALPHA, TOGGLE_ONE_HANDED_MODE, SWITCH_ONE_HANDED_MODE, SPLIT_LAYOUT, SHIFT_ENTER,
         ACTION_NEXT, ACTION_PREVIOUS, NOT_SPECIFIED, CLIPBOARD_COPY_ALL, WORD_LEFT, WORD_RIGHT, PAGE_UP,
         PAGE_DOWN, META, TAB, ESCAPE, INSERT, SLEEP, MEDIA_PLAY, MEDIA_PAUSE, MEDIA_PLAY_PAUSE, MEDIA_NEXT,

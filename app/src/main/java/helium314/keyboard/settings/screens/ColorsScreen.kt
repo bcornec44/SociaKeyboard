@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import android.app.Activity
 import android.content.ClipData
@@ -43,24 +43,24 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LocalLifecycleOwner
-import helium314.keyboard.keyboard.ColorSetting
-import helium314.keyboard.keyboard.KeyboardTheme
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.ColorType
-import helium314.keyboard.latin.common.default
-import helium314.keyboard.latin.common.encodeBase36
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.CloseIcon
-import helium314.keyboard.settings.SearchScreen
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.contentTextDirectionStyle
-import helium314.keyboard.settings.dialogs.ColorPickerDialog
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.keyboard.ColorSetting
+import com.keyfluent.keyboard.keyboard.KeyboardTheme
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.ColorType
+import com.keyfluent.keyboard.latin.common.default
+import com.keyfluent.keyboard.latin.common.encodeBase36
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.CloseIcon
+import com.keyfluent.keyboard.settings.SearchScreen
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.contentTextDirectionStyle
+import com.keyfluent.keyboard.settings.dialogs.ColorPickerDialog
+import com.keyfluent.keyboard.settings.previewDark
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -156,7 +156,7 @@ fun ColorsScreen(
             },
             stringResource(R.string.copy_to_clipboard) to {
                 val cm = ctx.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                cm.setPrimaryClip(ClipData.newPlainText("SociaKeyboard theme", getColorString(prefs, newThemeName.text)))
+                cm.setPrimaryClip(ClipData.newPlainText("KeyFluent theme", getColorString(prefs, newThemeName.text)))
             },
         ),
         onClickBack = onClickBack,

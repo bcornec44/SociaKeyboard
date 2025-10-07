@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.settings;
+package com.keyfluent.keyboard.latin.settings;
 
 import android.content.res.Resources;
 
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.keyboard.internal.PopupKeySpec;
-import helium314.keyboard.latin.PunctuationSuggestions;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.keyboard.internal.PopupKeySpec;
+import com.keyfluent.keyboard.latin.PunctuationSuggestions;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.StringUtils;
 
 import java.util.Arrays;
 import java.util.Locale;

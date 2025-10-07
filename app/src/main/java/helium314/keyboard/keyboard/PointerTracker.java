@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import static java.lang.Math.abs;
 
@@ -17,26 +17,26 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.TypedValueCompat;
 
-import helium314.keyboard.keyboard.internal.BatchInputArbiter;
-import helium314.keyboard.keyboard.internal.BatchInputArbiter.BatchInputArbiterListener;
-import helium314.keyboard.keyboard.internal.BogusMoveEventDetector;
-import helium314.keyboard.keyboard.internal.DrawingProxy;
-import helium314.keyboard.keyboard.internal.GestureEnabler;
-import helium314.keyboard.keyboard.internal.GestureStrokeDrawingParams;
-import helium314.keyboard.keyboard.internal.GestureStrokeDrawingPoints;
-import helium314.keyboard.keyboard.internal.GestureStrokeRecognitionParams;
-import helium314.keyboard.keyboard.internal.PointerTrackerQueue;
-import helium314.keyboard.keyboard.internal.TimerProxy;
-import helium314.keyboard.keyboard.internal.TypingTimeRecorder;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.CoordinateUtils;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.keyboard.internal.BatchInputArbiter;
+import com.keyfluent.keyboard.keyboard.internal.BatchInputArbiter.BatchInputArbiterListener;
+import com.keyfluent.keyboard.keyboard.internal.BogusMoveEventDetector;
+import com.keyfluent.keyboard.keyboard.internal.DrawingProxy;
+import com.keyfluent.keyboard.keyboard.internal.GestureEnabler;
+import com.keyfluent.keyboard.keyboard.internal.GestureStrokeDrawingParams;
+import com.keyfluent.keyboard.keyboard.internal.GestureStrokeDrawingPoints;
+import com.keyfluent.keyboard.keyboard.internal.GestureStrokeRecognitionParams;
+import com.keyfluent.keyboard.keyboard.internal.PointerTrackerQueue;
+import com.keyfluent.keyboard.keyboard.internal.TimerProxy;
+import com.keyfluent.keyboard.keyboard.internal.TypingTimeRecorder;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.CoordinateUtils;
+import com.keyfluent.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.utils.Log;
 
 import java.util.ArrayList;
 import java.util.Locale;

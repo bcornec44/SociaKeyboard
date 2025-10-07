@@ -3,32 +3,32 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
-package helium314.keyboard.keyboard.internal.keyboard_parser.floris
+package com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris
 
 import android.view.inputmethod.EditorInfo
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.Transient
-import helium314.keyboard.keyboard.Key
-import helium314.keyboard.keyboard.KeyboardId
-import helium314.keyboard.keyboard.KeyboardTheme
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.checkAndConvertCode
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.convertFlorisLabel
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.rtlLabel
-import helium314.keyboard.latin.RichInputMethodManager
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.spellcheck.AndroidSpellCheckerService
-import helium314.keyboard.latin.utils.InputTypeUtils
-import helium314.keyboard.latin.utils.LayoutType
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.ToolbarKey
-import helium314.keyboard.latin.utils.getCodeForToolbarKey
-import helium314.keyboard.latin.utils.toolbarKeyStrings
+import com.keyfluent.keyboard.keyboard.Key
+import com.keyfluent.keyboard.keyboard.KeyboardId
+import com.keyfluent.keyboard.keyboard.KeyboardTheme
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.checkAndConvertCode
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.convertFlorisLabel
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyLabel.rtlLabel
+import com.keyfluent.keyboard.latin.RichInputMethodManager
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.spellcheck.AndroidSpellCheckerService
+import com.keyfluent.keyboard.latin.utils.InputTypeUtils
+import com.keyfluent.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.ToolbarKey
+import com.keyfluent.keyboard.latin.utils.getCodeForToolbarKey
+import com.keyfluent.keyboard.latin.utils.toolbarKeyStrings
 import java.util.Locale
 
 // taken from FlorisBoard, modified (see also KeyData)
@@ -637,7 +637,7 @@ class TextKeyData(
 
 }
 
-// AutoTextKeyData is just for converting case with shift, which SociaKeyboard always does anyway
+// AutoTextKeyData is just for converting case with shift, which KeyFluent always does anyway
 // (maybe change later if there is a use case)
 @Serializable
 @SerialName("auto_text_key")

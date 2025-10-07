@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -23,20 +23,20 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.checkAndConvertCode
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.utils.ToolbarKey
-import helium314.keyboard.latin.utils.getCodeForToolbarKey
-import helium314.keyboard.latin.utils.getCodeForToolbarKeyLongClick
-import helium314.keyboard.latin.utils.getStringResourceOrName
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.latin.utils.readCustomKeyCodes
-import helium314.keyboard.latin.utils.writeCustomKeyCodes
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
-import helium314.keyboard.settings.screens.GetIcon
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode.checkAndConvertCode
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.utils.ToolbarKey
+import com.keyfluent.keyboard.latin.utils.getCodeForToolbarKey
+import com.keyfluent.keyboard.latin.utils.getCodeForToolbarKeyLongClick
+import com.keyfluent.keyboard.latin.utils.getStringResourceOrName
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.latin.utils.readCustomKeyCodes
+import com.keyfluent.keyboard.latin.utils.writeCustomKeyCodes
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
+import com.keyfluent.keyboard.settings.screens.GetIcon
 
 @Composable
 fun ToolbarKeysCustomizer(

@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.event
+package com.keyfluent.keyboard.event
 
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.StringUtils
 
 /**
  * Class representing a generic input event as handled by Latin IME.

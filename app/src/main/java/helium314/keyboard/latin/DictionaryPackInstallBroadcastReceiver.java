@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -13,9 +13,9 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ProviderInfo;
 import android.net.Uri;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 
-import helium314.keyboard.dictionarypack.DictionaryPackConstants;
+import com.keyfluent.keyboard.dictionarypack.DictionaryPackConstants;
 
 /**
  * Receives broadcasts pertaining to dictionary management and takes the appropriate action.

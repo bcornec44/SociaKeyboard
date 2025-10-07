@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.PopupKeysPanel;
-import helium314.keyboard.keyboard.PointerTracker;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.PopupKeysPanel;
+import com.keyfluent.keyboard.keyboard.PointerTracker;
 
 public interface DrawingProxy {
     /**

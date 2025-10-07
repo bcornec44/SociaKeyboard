@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.app.KeyguardManager;
 import android.content.Context;
@@ -12,21 +12,21 @@ import android.os.Build;
 import android.text.InputType;
 import android.view.inputmethod.EditorInfo;
 
-import helium314.keyboard.keyboard.internal.KeyboardBuilder;
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet;
-import helium314.keyboard.keyboard.internal.KeyboardParams;
-import helium314.keyboard.keyboard.internal.UniqueKeysCache;
-import helium314.keyboard.keyboard.internal.keyboard_parser.LayoutParser;
-import helium314.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfos;
-import helium314.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfosKt;
-import helium314.keyboard.latin.RichInputMethodManager;
-import helium314.keyboard.latin.RichInputMethodSubtype;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.InputTypeUtils;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.ResourceUtils;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardBuilder;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams;
+import com.keyfluent.keyboard.keyboard.internal.UniqueKeysCache;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.LayoutParser;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfos;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.LocaleKeyboardInfosKt;
+import com.keyfluent.keyboard.latin.RichInputMethodManager;
+import com.keyfluent.keyboard.latin.RichInputMethodSubtype;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.InputTypeUtils;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils;
 
 import java.lang.ref.SoftReference;
 import java.util.HashMap;

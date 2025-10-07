@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.suggestions;
+package com.keyfluent.keyboard.latin.suggestions;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -13,15 +13,15 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.internal.KeyboardBuilder;
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet;
-import helium314.keyboard.keyboard.internal.KeyboardParams;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.utils.TypefaceUtils;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardBuilder;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.utils.TypefaceUtils;
 
 public final class MoreSuggestions extends Keyboard {
     public final SuggestedWords mSuggestedWords;

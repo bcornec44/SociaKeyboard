@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import android.inputmethodservice.InputMethodService
 import android.os.Bundle
@@ -9,22 +9,22 @@ import android.text.InputType
 import android.view.KeyEvent
 import android.view.inputmethod.*
 import androidx.core.content.edit
-import helium314.keyboard.ShadowInputMethodManager2
-import helium314.keyboard.ShadowLocaleManagerCompat
-import helium314.keyboard.event.Event
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.keyboard.MainKeyboardView
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.ShadowFacilitator2.Companion.lastAddedWord
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.inputlogic.InputLogic
-import helium314.keyboard.latin.inputlogic.SpaceState
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ScriptUtils
-import helium314.keyboard.latin.utils.getTimestamp
-import helium314.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.ShadowInputMethodManager2
+import com.keyfluent.keyboard.ShadowLocaleManagerCompat
+import com.keyfluent.keyboard.event.Event
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.keyboard.MainKeyboardView
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.ShadowFacilitator2.Companion.lastAddedWord
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.inputlogic.InputLogic
+import com.keyfluent.keyboard.latin.inputlogic.SpaceState
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ScriptUtils
+import com.keyfluent.keyboard.latin.utils.getTimestamp
+import com.keyfluent.keyboard.latin.utils.prefs
 import org.junit.runner.RunWith
 import org.mockito.Mockito
 import org.robolectric.Robolectric
@@ -137,7 +137,7 @@ class InputLogicTest {
     }
 
     // todo: make it work, but it might not be that simple because adding is done in combiner
-    //  https://github.com/Helium314/SociaKeyboard/issues/214
+    //  https://github.com/Keyfluent/KeyFluent/issues/214
     @Test fun insertLetterIntoWordHangul() {
         if (BuildConfig.BUILD_TYPE == "runTests") return
         reset()
@@ -488,8 +488,8 @@ class InputLogicTest {
         assertEquals("b", composingText)
     }
 
-    // https://github.com/Helium314/SociaKeyboard/issues/215
-    // https://github.com/Helium314/SociaKeyboard/issues/229
+    // https://github.com/Keyfluent/KeyFluent/issues/215
+    // https://github.com/Keyfluent/KeyFluent/issues/229
     @Test fun `autospace works in URL field when input isn't URL, also for multiple suggestions`() {
         reset()
         latinIME.prefs().edit { putBoolean(Settings.PREF_URL_DETECTION, true) }
@@ -535,7 +535,7 @@ class InputLogicTest {
         assertEquals("hi ${StringUtils.newSingleCodePointString(0x1F36D)}", text)
     }
 
-    // https://github.com/Helium314/SociaKeyboard/issues/230
+    // https://github.com/Keyfluent/KeyFluent/issues/230
     @Test fun `no autospace after opening quotes`() {
         reset()
         chainInput("\"Hi\" \"h")

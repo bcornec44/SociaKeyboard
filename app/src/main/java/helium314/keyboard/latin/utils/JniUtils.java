@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
 import android.os.Build;
 import android.text.TextUtils;
 
-import helium314.keyboard.latin.App;
-import helium314.keyboard.latin.BuildConfig;
-import helium314.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.App;
+import com.keyfluent.keyboard.latin.BuildConfig;
+import com.keyfluent.keyboard.latin.settings.Settings;
 
 import java.io.File;
 import java.io.FileInputStream;

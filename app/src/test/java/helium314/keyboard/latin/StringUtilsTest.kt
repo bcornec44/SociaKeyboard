@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import androidx.test.core.app.ApplicationProvider
-import helium314.keyboard.ShadowInputMethodManager2
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.common.getFullEmojiAtEnd
-import helium314.keyboard.latin.common.nonWordCodePointAndNoSpaceBeforeCursor
-import helium314.keyboard.latin.settings.SpacingAndPunctuations
+import com.keyfluent.keyboard.ShadowInputMethodManager2
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.common.getFullEmojiAtEnd
+import com.keyfluent.keyboard.latin.common.nonWordCodePointAndNoSpaceBeforeCursor
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
@@ -84,7 +84,7 @@ class StringUtilsTest {
     }
 
     // todo: add tests for emoji detection?
-    //  could help towards fully fixing https://github.com/Helium314/SociaKeyboard/issues/22
+    //  could help towards fully fixing https://github.com/Keyfluent/KeyFluent/issues/22
     //  though this might be tricky, as some emojis will show as one on new Android versions, and
     //  as two on older versions
 }

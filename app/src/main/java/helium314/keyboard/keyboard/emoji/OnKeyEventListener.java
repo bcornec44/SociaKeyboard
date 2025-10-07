@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.keyboard.emoji;
+package com.keyfluent.keyboard.keyboard.emoji;
 
-import helium314.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.Key;
 
 /**
  * Interface to handle touch events from non-View-based elements

@@ -1,8 +1,8 @@
-package helium314.keyboard.keyboard.internal.keyboard_parser.floris
+package com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris
 
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.latin.utils.ToolbarKey
-import helium314.keyboard.latin.utils.toolbarKeyStrings
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.latin.utils.ToolbarKey
+import com.keyfluent.keyboard.latin.utils.toolbarKeyStrings
 
 /** labels for functional / special keys */
 object KeyLabel {

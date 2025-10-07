@@ -1,14 +1,14 @@
-# SociaKeyboard
+# KeyFluent
 
-SociaKeyboard is a privacy-conscious, customizable, open-source keyboard based on [HeliBoard](https://github.com/Helium314/HeliBoard) (which itself is derived from AOSP / OpenBoard).
-Unlike the original project, **SociaKeyboard includes optional online features**, offering seamless **text translation** through a **server-based translation system** powered by the **Mistral-Nemo LLM**.
+KeyFluent is a privacy-conscious, customizable, open-source keyboard based on [HeliBoard](https://github.com/Keyfluent/HeliBoard) (which itself is derived from AOSP / OpenBoard).
+Unlike the original project, **KeyFluent includes optional online features**, offering seamless **text translation** through a **server-based translation system** powered by the **Mistral-Nemo LLM**.
 
 While the keyboard itself remains open source, **the translation backend is proprietary** and **internet access is required** for online features.
-SociaKeyboard is distributed as a **paid app** on the Android marketplace to support server costs.
+KeyFluent is distributed as a **paid app** on the Android marketplace to support server costs.
 
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/helium314.keyboard/)
-[<img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get APK from GitHub" height="80">](https://github.com/bcornec44/SociaKeyboard/releases/latest)
-[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/helium314.keyboard)
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/com.keyfluent.keyboard/)
+[<img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Get APK from GitHub" height="80">](https://github.com/bcornec44/KeyFluent/releases/latest)
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.keyfluent.keyboard)
 
 ---
 
@@ -32,14 +32,14 @@ SociaKeyboard is distributed as a **paid app** on the Android marketplace to sup
 <ul>
   <li>Add dictionaries for suggestions and spell check</li>
   <ul>
-    <li>build your own, or get them <a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">here</a>, or in the <a href="https://codeberg.org/Helium314/aosp-dictionaries#experimental-dictionaries">experimental</a> section</li>
+    <li>build your own, or get them <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#dictionaries">here</a>, or in the <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#experimental-dictionaries">experimental</a> section</li>
   </ul>
   <li>Customizable keyboard themes (style, colors, background image)</li>
   <ul>
     <li>supports system day/night mode (Android 10+)</li>
     <li>supports dynamic colors (Android 12+)</li>
   </ul>
-  <li>Customizable keyboard <a href="https://github.com/bcornec44/SociaKeyboard/blob/main/layouts.md">layouts</a></li>
+  <li>Customizable keyboard <a href="https://github.com/bcornec44/KeyFluent/blob/main/layouts.md">layouts</a></li>
   <li>Multilingual typing</li>
   <li>Clipboard history</li>
   <li>One-handed mode</li>
@@ -51,7 +51,7 @@ SociaKeyboard is distributed as a **paid app** on the Android marketplace to sup
 
 # Online Translation
 
-SociaKeyboard introduces a **unique translation feature** not available in the original HeliBoard:
+KeyFluent introduces a **unique translation feature** not available in the original HeliBoard:
 
 * 🌍 **Translation Flags in the Suggestion Bar**:
   New flag icons appear in the word suggestion bar, allowing you to instantly translate the current text input into the selected language.
@@ -70,7 +70,7 @@ SociaKeyboard introduces a **unique translation feature** not available in the o
 
 ---
 
-For [FAQ](https://github.com/bcornec44/SociaKeyboard/wiki/FAQ) and more details, visit the [wiki](https://github.com/bcornec44/SociaKeyboard/wiki)
+For [FAQ](https://github.com/bcornec44/KeyFluent/wiki/FAQ) and more details, visit the [wiki](https://github.com/bcornec44/KeyFluent/wiki)
 
 ---
 
@@ -78,7 +78,7 @@ For [FAQ](https://github.com/bcornec44/SociaKeyboard/wiki/FAQ) and more details,
 
 ## Reporting Issues
 
-Report bugs or request features [here](https://github.com/bcornec44/SociaKeyboard/issues).
+Report bugs or request features [here](https://github.com/bcornec44/KeyFluent/issues).
 Before opening a new issue:
 
 * Check if it already exists
@@ -90,7 +90,7 @@ Read more on [effective bug reporting](https://www.chiark.greenend.org.uk/~sgtat
 
 ## Translations
 
-Help translate the app via [Weblate](https://translate.codeberg.org/projects/sociakeyboard/).
+Help translate the app via [Weblate](https://translate.codeberg.org/projects/keyfluent/).
 PRs for translations are not accepted to avoid conflicts.
 
 ## To Community
@@ -109,7 +109,7 @@ See [Contribution Guidelines](CONTRIBUTING.md)
 
 # License
 
-SociaKeyboard (fork of [HeliBoard](https://github.com/Helium314/HeliBoard)) is licensed under **GNU GPL v3.0**.
+KeyFluent (fork of [HeliBoard](https://github.com/Keyfluent/HeliBoard)) is licensed under **GNU GPL v3.0**.
 The translation server and its code are **not open source**.
 
 > This strong copyleft license requires making available complete source code of licensed works and modifications under the same license.
@@ -122,7 +122,7 @@ Icons are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Credits
 
-* [HeliBoard](https://github.com/Helium314/HeliBoard)
+* [HeliBoard](https://github.com/Keyfluent/HeliBoard)
 * [OpenBoard](https://github.com/openboard-team/openboard)
 * [AOSP Keyboard](https://android.googlesource.com/platform/packages/inputmethods/LatinIME/)
 * [LineageOS LatinIME](https://review.lineageos.org/admin/repos/LineageOS/android_packages_inputmethods_LatinIME)
@@ -130,4 +130,4 @@ Icons are under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 * [Indic Keyboard](https://gitlab.com/indicproject/indic-keyboard)
 * [FlorisBoard](https://github.com/florisboard/florisboard/)
 * Icon by [Fabian OvrWrt](https://github.com/FabianOvrWrt) and [The Eclectic Dyslexic](https://github.com/the-eclectic-dyslexic)
-* [Contributors](https://github.com/bcornec44/SociaKeyboard/graphs/contributors)
+* [Contributors](https://github.com/bcornec44/KeyFluent/graphs/contributors)

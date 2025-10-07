@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -17,19 +17,19 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.splitOnWhitespace
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils
-import helium314.keyboard.latin.utils.SubtypeSettings.getEnabledSubtypes
-import helium314.keyboard.latin.utils.SubtypeSettings.getSystemLocales
-import helium314.keyboard.latin.utils.getSecondaryLocales
-import helium314.keyboard.latin.utils.locale
-import helium314.keyboard.settings.NextScreenIcon
-import helium314.keyboard.settings.SearchScreen
-import helium314.keyboard.settings.SettingsDestination
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.splitOnWhitespace
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings.getEnabledSubtypes
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings.getSystemLocales
+import com.keyfluent.keyboard.latin.utils.getSecondaryLocales
+import com.keyfluent.keyboard.latin.utils.locale
+import com.keyfluent.keyboard.settings.NextScreenIcon
+import com.keyfluent.keyboard.settings.SearchScreen
+import com.keyfluent.keyboard.settings.SettingsDestination
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
 import java.util.Locale
 import java.util.TreeSet
 

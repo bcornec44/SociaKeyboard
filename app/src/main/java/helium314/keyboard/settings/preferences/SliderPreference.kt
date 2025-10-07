@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.preferences
+package com.keyfluent.keyboard.settings.preferences
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -9,11 +9,11 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.dialogs.SliderDialog
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.dialogs.SliderDialog
 import kotlin.math.roundToInt
 
 @Composable

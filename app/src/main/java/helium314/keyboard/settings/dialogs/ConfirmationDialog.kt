@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.latin.R
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.previewDark
 
 // taken from StreetComplete
 /** Slight specialization of an alert dialog: AlertDialog with OK and Cancel button. Both buttons

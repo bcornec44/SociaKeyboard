@@ -3,15 +3,15 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
-package helium314.keyboard.latin.common
+package com.keyfluent.keyboard.latin.common
 
 import android.content.Context
 import android.content.res.Resources
-import helium314.keyboard.compat.locale
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.utils.ScriptUtils.script
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils
 import java.util.Locale
 
 /**
@@ -189,7 +189,7 @@ object LocaleUtils {
         }
         val localeDisplayName = locale.getDisplayName(displayLocale)
         return if (localeDisplayName == languageTag) {
-            locale.getDisplayName(Locale.US) // try fallback to English name, relevant e.g. fpr pms, see https://github.com/Helium314/SociaKeyboard/pull/748
+            locale.getDisplayName(Locale.US) // try fallback to English name, relevant e.g. fpr pms, see https://github.com/Keyfluent/KeyFluent/pull/748
         } else {
             localeDisplayName
         }

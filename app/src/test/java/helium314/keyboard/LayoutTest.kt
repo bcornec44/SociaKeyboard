@@ -1,6 +1,6 @@
-package helium314.keyboard
+package com.keyfluent.keyboard
 
-import helium314.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.LayoutType
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

@@ -1,11 +1,11 @@
-SociaKeyboard on yksityisyyttä kunnioittava avoimen lähdekoodin näppäimistö, joka perustuu AOSP / OpenBoardiin.
+KeyFluent on yksityisyyttä kunnioittava avoimen lähdekoodin näppäimistö, joka perustuu AOSP / OpenBoardiin.
 Ei käytä Internet-lupaa, joten on kokonaan ei-verkkotilassa.
 
 Ominaisuudet:
 <ul>
  <li>Lisää sanakirjoja ehdotuksia ja oikeinkirjoituksen tarkistusta varten</li>
  <ul>
- <li>rakenna omasi tai hanki ne <a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">täältä</a> tai <a href="https://codeberg.org/Helium314/aosp-dictionaries#experimental-dictionaries">kokeellinen toukokuu</a> -osiossa (laatu voi vaihdella)</li>
+ <li>rakenna omasi tai hanki ne <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#dictionaries">täältä</a> tai <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#experimental-dictionaries">kokeellinen toukokuu</a> -osiossa (laatu voi vaihdella)</li>
  <li>hymiöiden tai tieteellisten symbolien lisäsanakirjoja voidaan käyttää ehdotusten antamiseen (samanlainen kuin "emojihaku")</li>
  <li>huomaa, että korean asetteluissa ehdotukset toimivat vain käyttämällä <a href="https://github.com/openboard-team/openboard/commit/83fca9533c03b9fecc009fc632577226bbd6301f">tätä sanakirjaa</a>. Sanakirjan työskentelytyökalut</a> eivät ole käytettävissä.</li>
  </ul>
@@ -14,7 +14,7 @@ Ominaisuudet:
  <li>voi seurata järjestelmän päivä/yö-asetuksia Android 10+ -versiossa (ja joissakin Android 9:n versioissa)</li>
  <li>voi seurata dynaamisia värejä Android 12+:lle</li>
  </ul>
- <li>Muokkaa näppäimistön <a href="https://github.com/Helium314/SociaKeyboard/blob/main/layouts.md">asetteluja</a> (käytettävissä vain, kun <i>käytä järjestelmäkieliä</i>)</li>
+ <li>Muokkaa näppäimistön <a href="https://github.com/Keyfluent/KeyFluent/blob/main/layouts.md">asetteluja</a> (käytettävissä vain, kun <i>käytä järjestelmäkieliä</i>)</li>
  <li>Muokkaa erikoisasetteluja, kuten symboleja, numeroita tai toiminnallisten näppäinten asettelua.</li>
  <li>Monikielinen kirjoittaminen</li>
  <li>Liukukirjoitus (<i>vain suljetun lähdekoodin kirjastossa</i> ☹️)</li>

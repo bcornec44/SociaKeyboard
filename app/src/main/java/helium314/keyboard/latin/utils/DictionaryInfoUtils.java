@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.content.Context;
 import android.text.TextUtils;
@@ -14,10 +14,10 @@ import androidx.annotation.Nullable;
 
 import com.android.inputmethod.latin.utils.BinaryDictionaryUtils;
 
-import helium314.keyboard.latin.define.DecoderSpecificConstants;
-import helium314.keyboard.latin.makedict.DictionaryHeader;
-import helium314.keyboard.latin.makedict.UnsupportedFormatException;
-import helium314.keyboard.latin.settings.SpacingAndPunctuations;
+import com.keyfluent.keyboard.latin.define.DecoderSpecificConstants;
+import com.keyfluent.keyboard.latin.makedict.DictionaryHeader;
+import com.keyfluent.keyboard.latin.makedict.UnsupportedFormatException;
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations;
 
 import java.io.File;
 import java.io.IOException;

@@ -7,26 +7,26 @@
 package com.android.inputmethod.latin;
 
 import android.text.TextUtils;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 import android.util.SparseArray;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.latin.Dictionary;
-import helium314.keyboard.latin.NgramContext;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.FileUtils;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.makedict.DictionaryHeader;
-import helium314.keyboard.latin.makedict.FormatSpec.DictionaryOptions;
-import helium314.keyboard.latin.makedict.UnsupportedFormatException;
-import helium314.keyboard.latin.makedict.WordProperty;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.latin.Dictionary;
+import com.keyfluent.keyboard.latin.NgramContext;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.FileUtils;
+import com.keyfluent.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.makedict.DictionaryHeader;
+import com.keyfluent.keyboard.latin.makedict.FormatSpec.DictionaryOptions;
+import com.keyfluent.keyboard.latin.makedict.UnsupportedFormatException;
+import com.keyfluent.keyboard.latin.makedict.WordProperty;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
 import com.android.inputmethod.latin.utils.BinaryDictionaryUtils;
-import helium314.keyboard.latin.utils.JniUtils;
+import com.keyfluent.keyboard.latin.utils.JniUtils;
 import com.android.inputmethod.latin.utils.WordInputEventForPersonalization;
 
 import java.io.File;

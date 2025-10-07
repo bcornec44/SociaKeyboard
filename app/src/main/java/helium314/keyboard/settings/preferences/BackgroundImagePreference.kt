@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.preferences
+package com.keyfluent.keyboard.settings.preferences
 
 import android.app.Activity
 import android.content.Context
@@ -18,18 +18,18 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.FileUtils
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.dialogs.ConfirmationDialog
-import helium314.keyboard.settings.dialogs.InfoDialog
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.FileUtils
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.dialogs.ConfirmationDialog
+import com.keyfluent.keyboard.settings.dialogs.InfoDialog
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

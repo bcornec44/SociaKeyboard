@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -9,17 +9,17 @@ import android.view.inputmethod.InputMethodSubtype
 import android.widget.Toast
 import androidx.core.app.LocaleManagerCompat
 import androidx.core.content.edit
-import helium314.keyboard.compat.locale
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.RichInputMethodManager
-import helium314.keyboard.latin.common.Constants.Separators
-import helium314.keyboard.latin.common.LocaleUtils
-import helium314.keyboard.latin.define.DebugFlags
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.settings.SettingsSubtype
-import helium314.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
-import helium314.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.RichInputMethodManager
+import com.keyfluent.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.latin.common.LocaleUtils
+import com.keyfluent.keyboard.latin.define.DebugFlags
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.settings.SettingsSubtype
+import com.keyfluent.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
 import java.util.Locale
 
 object SubtypeSettings {

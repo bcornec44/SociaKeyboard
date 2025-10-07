@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.settings;
+package com.keyfluent.keyboard.latin.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -22,21 +22,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.keyboard.KeyboardActionListener;
-import helium314.keyboard.latin.AudioAndHapticFeedbackManager;
-import helium314.keyboard.latin.InputAttributes;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.utils.DeviceProtectedUtils;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.LayoutType;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.ResourceUtils;
-import helium314.keyboard.latin.utils.RunInLocaleKt;
-import helium314.keyboard.latin.utils.StatsUtils;
-import helium314.keyboard.latin.utils.SubtypeSettings;
-import helium314.keyboard.latin.utils.ToolbarKey;
-import helium314.keyboard.latin.utils.ToolbarUtilsKt;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.keyboard.KeyboardActionListener;
+import com.keyfluent.keyboard.latin.AudioAndHapticFeedbackManager;
+import com.keyfluent.keyboard.latin.InputAttributes;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.utils.DeviceProtectedUtils;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.LayoutType;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.latin.utils.RunInLocaleKt;
+import com.keyfluent.keyboard.latin.utils.StatsUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings;
+import com.keyfluent.keyboard.latin.utils.ToolbarKey;
+import com.keyfluent.keyboard.latin.utils.ToolbarUtilsKt;
 
 import java.io.File;
 import java.util.Arrays;

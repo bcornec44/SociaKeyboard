@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.emoji;
+package com.keyfluent.keyboard.keyboard.emoji;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -20,30 +20,30 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.KeyboardActionListener;
-import helium314.keyboard.keyboard.KeyboardId;
-import helium314.keyboard.keyboard.KeyboardLayoutSet;
-import helium314.keyboard.keyboard.KeyboardSwitcher;
-import helium314.keyboard.keyboard.KeyboardView;
-import helium314.keyboard.keyboard.MainKeyboardView;
-import helium314.keyboard.keyboard.PointerTracker;
-import helium314.keyboard.keyboard.internal.KeyDrawParams;
-import helium314.keyboard.keyboard.internal.KeyVisualAttributes;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.AudioAndHapticFeedbackManager;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodSubtype;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.KeyboardActionListener;
+import com.keyfluent.keyboard.keyboard.KeyboardId;
+import com.keyfluent.keyboard.keyboard.KeyboardLayoutSet;
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher;
+import com.keyfluent.keyboard.keyboard.KeyboardView;
+import com.keyfluent.keyboard.keyboard.MainKeyboardView;
+import com.keyfluent.keyboard.keyboard.PointerTracker;
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.KeyVisualAttributes;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.AudioAndHapticFeedbackManager;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodSubtype;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
 
 import org.jetbrains.annotations.NotNull;
 
-import static helium314.keyboard.latin.common.Constants.NOT_A_COORDINATE;
+import static com.keyfluent.keyboard.latin.common.Constants.NOT_A_COORDINATE;
 
 /**
  * View class to implement Emoji palettes.
@@ -228,7 +228,7 @@ public final class EmojiPalettesView extends LinearLayout
 
     /**
      * Called from {@link EmojiPageKeyboardView} through
-     * {@link helium314.keyboard.keyboard.emoji.OnKeyEventListener}
+     * {@link com.keyfluent.keyboard.keyboard.emoji.OnKeyEventListener}
      * interface to handle touch events from non-View-based elements such as Emoji buttons.
      */
     @Override
@@ -239,7 +239,7 @@ public final class EmojiPalettesView extends LinearLayout
 
     /**
      * Called from {@link EmojiPageKeyboardView} through
-     * {@link helium314.keyboard.keyboard.emoji.OnKeyEventListener}
+     * {@link com.keyfluent.keyboard.keyboard.emoji.OnKeyEventListener}
      * interface to handle touch events from non-View-based elements such as Emoji buttons.
      * This may be called without any prior call to {@link OnKeyEventListener#onPressKey(Key)}.
      */

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.compat;
+package com.keyfluent.keyboard.compat;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
@@ -14,7 +14,7 @@ public class ClipboardManagerCompat {
             try {
                 cm.clearPrimaryClip();
             } catch (Exception e) {
-                // workaround for system-caused crash in https://github.com/Helium314/SociaKeyboard/issues/203
+                // workaround for system-caused crash in https://github.com/Keyfluent/KeyFluent/issues/203
                 cm.setPrimaryClip(ClipData.newPlainText("", ""));
             }
         } else {

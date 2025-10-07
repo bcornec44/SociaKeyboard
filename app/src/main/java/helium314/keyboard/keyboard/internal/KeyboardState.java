@@ -4,21 +4,21 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
 import android.text.TextUtils;
 
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.utils.Log;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.event.Event;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.CapsModeUtils;
-import helium314.keyboard.latin.utils.RecapitalizeStatus;
+import com.keyfluent.keyboard.event.Event;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.CapsModeUtils;
+import com.keyfluent.keyboard.latin.utils.RecapitalizeStatus;
 
 /**
  * Keyboard state machine.

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings
+package com.keyfluent.keyboard.settings
 
 import android.content.Context
 import android.content.Intent
@@ -30,20 +30,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import helium314.keyboard.compat.locale
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.InputAttributes
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.FileUtils
-import helium314.keyboard.latin.define.DebugFlags
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ExecutorUtils
-import helium314.keyboard.latin.utils.UncachedInputMethodManagerUtils
-import helium314.keyboard.latin.utils.cleanUnusedMainDicts
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.dialogs.ConfirmationDialog
-import helium314.keyboard.settings.dialogs.NewDictionaryDialog
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.InputAttributes
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.FileUtils
+import com.keyfluent.keyboard.latin.define.DebugFlags
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ExecutorUtils
+import com.keyfluent.keyboard.latin.utils.UncachedInputMethodManagerUtils
+import com.keyfluent.keyboard.latin.utils.cleanUnusedMainDicts
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.dialogs.ConfirmationDialog
+import com.keyfluent.keyboard.settings.dialogs.NewDictionaryDialog
 import kotlinx.coroutines.flow.MutableStateFlow
 import java.io.BufferedOutputStream
 import java.io.File

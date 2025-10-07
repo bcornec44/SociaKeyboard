@@ -4,15 +4,15 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.define
+package com.keyfluent.keyboard.latin.define
 
 import android.content.Context
 import android.os.Build
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.settings.DebugSettings
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.settings.DebugSettings
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.prefs
 import java.io.File
 import java.io.IOException
 import java.io.PrintWriter

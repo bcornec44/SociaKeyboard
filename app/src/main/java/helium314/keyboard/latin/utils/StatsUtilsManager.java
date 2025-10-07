@@ -5,12 +5,12 @@
  */
 
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.content.Context;
 
-import helium314.keyboard.latin.DictionaryFacilitator;
-import helium314.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.DictionaryFacilitator;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
 
 @SuppressWarnings("unused")
 public class StatsUtilsManager {

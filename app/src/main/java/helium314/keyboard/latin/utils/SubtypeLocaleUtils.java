@@ -4,23 +4,23 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.view.inputmethod.InputMethodSubtype;
 
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.LocaleUtils;
-import helium314.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.LocaleUtils;
+import com.keyfluent.keyboard.latin.common.StringUtils;
 
 import java.util.HashMap;
 import java.util.Locale;
 
-import static helium314.keyboard.latin.common.Constants.Subtype.ExtraValue.COMBINING_RULES;
-import static helium314.keyboard.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
+import static com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue.COMBINING_RULES;
+import static com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue.UNTRANSLATABLE_STRING_IN_SUBTYPE_NAME;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

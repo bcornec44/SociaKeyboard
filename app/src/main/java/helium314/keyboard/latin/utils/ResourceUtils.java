@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -19,8 +19,8 @@ import android.view.WindowInsets;
 import android.view.WindowManager;
 import android.view.WindowMetrics;
 
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
 
 public final class ResourceUtils {
 

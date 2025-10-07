@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.WindowInsets
@@ -16,16 +16,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.utils.JniUtils
-import helium314.keyboard.latin.utils.SubtypeSettings
-import helium314.keyboard.latin.utils.displayName
-import helium314.keyboard.settings.NextScreenIcon
-import helium314.keyboard.settings.SearchSettingsScreen
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.preferences.Preference
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.utils.JniUtils
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings
+import com.keyfluent.keyboard.latin.utils.displayName
+import com.keyfluent.keyboard.settings.NextScreenIcon
+import com.keyfluent.keyboard.settings.SearchSettingsScreen
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.preferences.Preference
+import com.keyfluent.keyboard.settings.previewDark
 
 @Composable
 fun MainSettingsScreen(

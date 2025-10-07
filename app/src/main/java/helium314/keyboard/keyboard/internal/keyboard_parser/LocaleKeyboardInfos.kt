@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.keyboard.internal.keyboard_parser
+package com.keyfluent.keyboard.keyboard.internal.keyboard_parser
 
 import android.content.Context
-import helium314.keyboard.keyboard.Key
-import helium314.keyboard.keyboard.KeyboardId
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyData
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.toTextKey
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.splitOnFirstSpacesOnly
-import helium314.keyboard.latin.common.splitOnWhitespace
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils
+import com.keyfluent.keyboard.keyboard.Key
+import com.keyfluent.keyboard.keyboard.KeyboardId
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyData
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.toTextKey
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.splitOnFirstSpacesOnly
+import com.keyfluent.keyboard.latin.common.splitOnWhitespace
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils
 import java.io.InputStream
 import java.util.Locale
 

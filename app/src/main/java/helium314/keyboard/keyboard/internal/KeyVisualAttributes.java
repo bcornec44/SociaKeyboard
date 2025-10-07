@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
@@ -13,11 +13,11 @@ import android.util.SparseIntArray;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
 
 public final class KeyVisualAttributes {
     @Nullable

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.emoji;
+package com.keyfluent.keyboard.keyboard.emoji;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,7 +13,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.os.Handler;
 import android.util.AttributeSet;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -26,19 +26,19 @@ import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.accessibility.KeyboardAccessibilityDelegate;
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.KeyDetector;
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.KeyboardView;
-import helium314.keyboard.keyboard.PopupKeysKeyboard;
-import helium314.keyboard.keyboard.PopupKeysKeyboardView;
-import helium314.keyboard.keyboard.PopupKeysPanel;
-import helium314.keyboard.keyboard.internal.PopupKeySpec;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.CoordinateUtils;
-import helium314.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.accessibility.KeyboardAccessibilityDelegate;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.KeyDetector;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.KeyboardView;
+import com.keyfluent.keyboard.keyboard.PopupKeysKeyboard;
+import com.keyfluent.keyboard.keyboard.PopupKeysKeyboardView;
+import com.keyfluent.keyboard.keyboard.PopupKeysPanel;
+import com.keyfluent.keyboard.keyboard.internal.PopupKeySpec;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.CoordinateUtils;
+import com.keyfluent.keyboard.latin.settings.Settings;
 
 import java.util.WeakHashMap;
 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
 import android.content.res.Configuration

@@ -1,11 +1,11 @@
-O SociaKeyboard é um teclado de código aberto, consciente sobre a privacidade, baseado no do AOSP e no OpenBoard.
+O KeyFluent é um teclado de código aberto, consciente sobre a privacidade, baseado no do AOSP e no OpenBoard.
 Não solicita a permissão de rede do Android, é 100% offline e não tem acesso à internet.
 
 Recursos:
 <ul>
   <li>Adicione dicionários para sugestões ou verificação de ortografia</li>
   <ul>
-    <li>faça os seus, ou obtenha-os <a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">aqui</a>, ou na seção <a href="https://codeberg.org/Helium314/aosp-dictionaries#experimental-dictionaries">experimental</a> (a qualidade pode variar)</li>
+    <li>faça os seus, ou obtenha-os <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#dictionaries">aqui</a>, ou na seção <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#experimental-dictionaries">experimental</a> (a qualidade pode variar)</li>
     <li>dicionários adicionais de emojis ou símbolos podem ser usados para dar sugestões (parecido com a pesquisa de emoji)</li>
     <li>é importante notar que para layouts Coreanos, sugestões só funcionam usando <a href="https://github.com/openboard-team/openboard/commit/83fca9533c03b9fecc009fc632577226bbd6301f">este dicionário</a>, as ferramentas no repositório de dicionários não conseguem criar dicionários funcionais</li>
   </ul>
@@ -14,7 +14,7 @@ Recursos:
     <li>consegue seguir a configuração de dia/noite do sistema do Android 10+ (e em algumas versões do Android 9)</li>
     <li>consegue seguir as cores dinâmicas do Android 12+</li>
   </ul>
-  <li>Customize os <a href="https://github.com/Helium314/SociaKeyboard/blob/main/layouts.md">layouts</a> do teclado (disponível somente quando a opção <i>Usar idiomas do sistema</i> é desativada)</li>
+  <li>Customize os <a href="https://github.com/Keyfluent/KeyFluent/blob/main/layouts.md">layouts</a> do teclado (disponível somente quando a opção <i>Usar idiomas do sistema</i> é desativada)</li>
   <li>Customize layouts especiais, como símbolos, números ou o layout de teclas funcionais</li>
   <li>Digitação multi-linguagem</li>
   <li>Digitação por Gestos (<i>somente com uma biblioteca proprietária</i> ☹️)</li>

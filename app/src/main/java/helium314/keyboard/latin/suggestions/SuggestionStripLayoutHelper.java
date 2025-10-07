@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.suggestions;
+package com.keyfluent.keyboard.latin.suggestions;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -36,17 +36,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.latin.PunctuationSuggestions;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.utils.ResourceUtils;
-import helium314.keyboard.latin.utils.ViewLayoutUtils;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.latin.PunctuationSuggestions;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.utils.ResourceUtils;
+import com.keyfluent.keyboard.latin.utils.ViewLayoutUtils;
 
 import java.util.ArrayList;
 

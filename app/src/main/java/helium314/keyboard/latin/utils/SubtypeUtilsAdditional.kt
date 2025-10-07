@@ -1,20 +1,20 @@
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
 import android.os.Build
 import android.view.inputmethod.InputMethodSubtype
 import android.view.inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.Constants.Separators
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Defaults.default
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.settings.SettingsSubtype
-import helium314.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
-import helium314.keyboard.latin.utils.LayoutType.Companion.toExtraValue
-import helium314.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Defaults.default
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.settings.SettingsSubtype
+import com.keyfluent.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
+import com.keyfluent.keyboard.latin.utils.LayoutType.Companion.toExtraValue
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
 import java.util.EnumMap
 import java.util.Locale
 

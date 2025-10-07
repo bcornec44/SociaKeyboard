@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.Manifest;
 import android.content.Context;
@@ -16,24 +16,24 @@ import android.view.inputmethod.InputMethodSubtype;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.latin.NgramContext.WordInfo;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.common.StringUtilsKt;
-import helium314.keyboard.latin.permissions.PermissionsUtil;
-import helium314.keyboard.latin.personalization.UserHistoryDictionary;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
-import helium314.keyboard.latin.utils.ExecutorUtils;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.SubtypeSettings;
-import helium314.keyboard.latin.utils.SubtypeUtilsKt;
-import helium314.keyboard.latin.utils.SuggestionResults;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.latin.NgramContext.WordInfo;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.common.StringUtilsKt;
+import com.keyfluent.keyboard.latin.permissions.PermissionsUtil;
+import com.keyfluent.keyboard.latin.personalization.UserHistoryDictionary;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.latin.utils.ExecutorUtils;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings;
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsKt;
+import com.keyfluent.keyboard.latin.utils.SuggestionResults;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -78,7 +78,7 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
     private String mChangeTo = "";
 
     // todo: write cache never set, and never read (only written)
-    //  tried to use read cache for a while, but small performance improvements are not worth the work (https://github.com/Helium314/SociaKeyboard/issues/307)
+    //  tried to use read cache for a while, but small performance improvements are not worth the work (https://github.com/Keyfluent/KeyFluent/issues/307)
     private LruCache<String, Boolean> mValidSpellingWordReadCache;
     private LruCache<String, Boolean> mValidSpellingWordWriteCache;
 
@@ -409,7 +409,7 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
                         || !oldDictionaryGroupForLocale.hasDict(subDictType, account)) {
                     // Create a new dictionary.
                     subDict = getSubDict(subDictType, context, locale, null, dictNamePrefix, account);
-                    if (subDict == null) continue; // https://github.com/Helium314/SociaKeyboard/issues/293
+                    if (subDict == null) continue; // https://github.com/Keyfluent/KeyFluent/issues/293
                 } else {
                     // Reuse the existing dictionary, and don't close it at the end
                     subDict = oldDictionaryGroupForLocale.getSubDict(subDictType);
@@ -571,7 +571,7 @@ public class DictionaryFacilitatorImpl implements DictionaryFacilitator {
         // reasoning: typing the same word again -> we probably want it in some dictionary permanently
         final SettingsValues sv = Settings.getValues();
         if (sv.mAddToPersonalDictionary // require the setting
-                && sv.mAutoCorrectEnabled == sv.mAutoCorrectionEnabledPerUserSettings // don't add if user wants autocorrect but input field does not, see https://github.com/Helium314/SociaKeyboard/issues/427#issuecomment-1905438000
+                && sv.mAutoCorrectEnabled == sv.mAutoCorrectionEnabledPerUserSettings // don't add if user wants autocorrect but input field does not, see https://github.com/Keyfluent/KeyFluent/issues/427#issuecomment-1905438000
                 && mDictionaryGroups.get(0).hasDict(Dictionary.TYPE_USER_HISTORY, mDictionaryGroups.get(0).mAccount) // require personalized suggestions
                 && !wasAutoCapitalized // we can't be 100% sure about what the user intended to type, so better don't add it
                 && words.length == 1) { // ignore if more than a single word, this only happens with (badly working) spaceAwareGesture

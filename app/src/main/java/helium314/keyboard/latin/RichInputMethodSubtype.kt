@@ -3,20 +3,20 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import android.view.inputmethod.InputMethodSubtype
 import android.view.inputmethod.InputMethodSubtype.InputMethodSubtypeBuilder
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.utils.LayoutType
-import helium314.keyboard.latin.utils.LayoutUtilsCustom
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.ScriptUtils
-import helium314.keyboard.latin.utils.ScriptUtils.script
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils
-import helium314.keyboard.latin.utils.locale
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.LayoutUtilsCustom
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.ScriptUtils
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils
+import com.keyfluent.keyboard.latin.utils.locale
 import java.util.Locale
 
 /**

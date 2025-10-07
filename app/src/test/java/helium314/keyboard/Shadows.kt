@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard
+package com.keyfluent.keyboard
 
 import android.content.Context
 import android.view.KeyEvent
@@ -9,8 +9,8 @@ import android.view.inputmethod.InputMethodSubtype
 import androidx.core.app.LocaleManagerCompat
 import androidx.core.os.LocaleListCompat
 import com.android.inputmethod.latin.utils.BinaryDictionaryUtils
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.common.StringUtils
 import org.robolectric.annotation.Implementation
 import org.robolectric.annotation.Implements
 import org.robolectric.shadows.ShadowInputMethodManager
@@ -29,8 +29,8 @@ class ShadowInputMethodManager2 : ShadowInputMethodManager() {
     @Implementation
     override fun getInputMethodList() = listOf(
         if (BuildConfig.BUILD_TYPE == "debug" || BuildConfig.BUILD_TYPE == "debugNoMinify")
-            InputMethodInfo("helium314.keyboard.debug", "LatinIME", "SociaKeyboard debug", null)
-        else InputMethodInfo("helium314.keyboard", "LatinIME", "SociaKeyboard", null),
+            InputMethodInfo("com.keyfluent.keyboard.debug", "LatinIME", "KeyFluent debug", null)
+        else InputMethodInfo("com.keyfluent.keyboard", "LatinIME", "KeyFluent", null),
     )
     @Implementation
     fun getShortcutInputMethodsAndSubtypes() = emptyMap<InputMethodInfo, List<InputMethodSubtype>>()

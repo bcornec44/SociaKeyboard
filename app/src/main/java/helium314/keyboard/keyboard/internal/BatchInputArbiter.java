@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.InputPointers;
 
 /**
  * This class arbitrates batch input.

@@ -1,4 +1,4 @@
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
 import android.content.ContextWrapper

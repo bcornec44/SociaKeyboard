@@ -1,4 +1,4 @@
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.inputmethodservice.InputMethodService
 import kotlinx.coroutines.Dispatchers
@@ -17,7 +17,7 @@ import okhttp3.Request
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.io.IOException
-import helium314.keyboard.latin.LatinIME
+import com.keyfluent.keyboard.latin.LatinIME
 
 object TranslatorUtils {
 

@@ -4,16 +4,16 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.spellcheck;
+package com.keyfluent.keyboard.latin.spellcheck;
 
 import android.content.res.Resources;
 import android.view.textservice.SentenceSuggestionsInfo;
 import android.view.textservice.SuggestionsInfo;
 import android.view.textservice.TextInfo;
 
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.settings.SpacingAndPunctuations;
-import helium314.keyboard.latin.utils.RunInLocaleKt;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations;
+import com.keyfluent.keyboard.latin.utils.RunInLocaleKt;
 
 import java.util.ArrayList;
 import java.util.Locale;

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.inputlogic;
+package com.keyfluent.keyboard.latin.inputlogic;
 
 import android.graphics.Color;
 import android.os.SystemClock;
@@ -21,40 +21,40 @@ import android.view.inputmethod.EditorInfo;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.event.Event;
-import helium314.keyboard.event.HangulEventDecoder;
-import helium314.keyboard.event.InputTransaction;
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.KeyboardSwitcher;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.Dictionary;
-import helium314.keyboard.latin.DictionaryFacilitator;
-import helium314.keyboard.latin.LastComposedWord;
-import helium314.keyboard.latin.LatinIME;
-import helium314.keyboard.latin.NgramContext;
-import helium314.keyboard.latin.RichInputConnection;
-import helium314.keyboard.latin.Suggest;
-import helium314.keyboard.latin.Suggest.OnGetSuggestedWordsCallback;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.WordComposer;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.common.StringUtilsKt;
-import helium314.keyboard.latin.common.SuggestionSpanUtilsKt;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.settings.SpacingAndPunctuations;
-import helium314.keyboard.latin.suggestions.SuggestionStripViewAccessor;
-import helium314.keyboard.latin.utils.AsyncResultHolder;
-import helium314.keyboard.latin.utils.InputTypeUtils;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.RecapitalizeStatus;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.StatsUtils;
-import helium314.keyboard.latin.utils.TextRange;
-import helium314.keyboard.latin.utils.TimestampKt;
+import com.keyfluent.keyboard.event.Event;
+import com.keyfluent.keyboard.event.HangulEventDecoder;
+import com.keyfluent.keyboard.event.InputTransaction;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.Dictionary;
+import com.keyfluent.keyboard.latin.DictionaryFacilitator;
+import com.keyfluent.keyboard.latin.LastComposedWord;
+import com.keyfluent.keyboard.latin.LatinIME;
+import com.keyfluent.keyboard.latin.NgramContext;
+import com.keyfluent.keyboard.latin.RichInputConnection;
+import com.keyfluent.keyboard.latin.Suggest;
+import com.keyfluent.keyboard.latin.Suggest.OnGetSuggestedWordsCallback;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.WordComposer;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.common.StringUtilsKt;
+import com.keyfluent.keyboard.latin.common.SuggestionSpanUtilsKt;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.settings.SpacingAndPunctuations;
+import com.keyfluent.keyboard.latin.suggestions.SuggestionStripViewAccessor;
+import com.keyfluent.keyboard.latin.utils.AsyncResultHolder;
+import com.keyfluent.keyboard.latin.utils.InputTypeUtils;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.RecapitalizeStatus;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.StatsUtils;
+import com.keyfluent.keyboard.latin.utils.TextRange;
+import com.keyfluent.keyboard.latin.utils.TimestampKt;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -263,7 +263,7 @@ public final class InputLogic {
      * @param settingsValues the current values of the settings.
      * @param suggestionInfo the suggestion info.
      * @param keyboardShiftState the shift state of the keyboard, as returned by
-     *     {@link helium314.keyboard.keyboard.KeyboardSwitcher#getKeyboardShiftMode()}
+     *     {@link com.keyfluent.keyboard.keyboard.KeyboardSwitcher#getKeyboardShiftMode()}
      * @return the complete transaction object
      */
     // Called from {@link SuggestionStripView} through the {@link SuggestionStripView#Listener}
@@ -431,7 +431,7 @@ public final class InputLogic {
      * @param settingsValues the current settings values.
      * @param event the event to handle.
      * @param keyboardShiftMode the current shift mode of the keyboard, as returned by
-     *     {@link helium314.keyboard.keyboard.KeyboardSwitcher#getKeyboardShiftMode()}
+     *     {@link com.keyfluent.keyboard.keyboard.KeyboardSwitcher#getKeyboardShiftMode()}
      * @return the complete transaction object
      */
     public InputTransaction onCodeInput(final SettingsValues settingsValues,
@@ -1032,7 +1032,7 @@ public final class InputLogic {
                 mSpaceState = SpaceState.WEAK;
             } else if ((settingsValues.mInputAttributes.mInputType & InputType.TYPE_MASK_CLASS) != InputType.TYPE_CLASS_TEXT
                     && codePoint >= '0' && codePoint <= '9') {
-                // weird issue when committing text: https://github.com/Helium314/SociaKeyboard/issues/585
+                // weird issue when committing text: https://github.com/Keyfluent/KeyFluent/issues/585
                 // but at the same time we don't always want to do it for numbers because it might interfere with url detection
                 // todo: consider always using sendDownUpKeyEvent for non-text-inputType
                 sendDownUpKeyEvent(codePoint - '0' + KeyEvent.KEYCODE_0);
@@ -1234,7 +1234,7 @@ public final class InputLogic {
             }
             // todo: this is currently disabled, as it causes inconsistencies with textInput, depending whether the end
             //  is part of a word (where we start composing) or not (where we end in code below)
-            //  see https://github.com/Helium314/SociaKeyboard/issues/1019
+            //  see https://github.com/Keyfluent/KeyFluent/issues/1019
             //  with better emoji detection on backspace (getFullEmojiAtEnd), this functionality might not be necessary
             //  -> enable again if there are issues, otherwise delete the code, together with mEnteredText
             if (false && mEnteredText != null && mConnection.sameAsTextBeforeCursor(mEnteredText)) {
@@ -2081,10 +2081,10 @@ public final class InputLogic {
     }
 
     /**
-     * Make a {@link helium314.keyboard.latin.SuggestedWords} object containing a typed word
+     * Make a {@link com.keyfluent.keyboard.latin.SuggestedWords} object containing a typed word
      * and obsolete suggestions.
-     * See {@link helium314.keyboard.latin.SuggestedWords#getTypedWordAndPreviousSuggestions(
-     *      SuggestedWordInfo, helium314.keyboard.latin.SuggestedWords)}.
+     * See {@link com.keyfluent.keyboard.latin.SuggestedWords#getTypedWordAndPreviousSuggestions(
+     *      SuggestedWordInfo, com.keyfluent.keyboard.latin.SuggestedWords)}.
      * @param typedWordInfo The typed word as a SuggestedWordInfo.
      * @param previousSuggestedWords The previously suggested words.
      * @return Obsolete suggestions with the newly typed word.

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.spellcheck;
+package com.keyfluent.keyboard.latin.spellcheck;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,24 +16,24 @@ import android.view.textservice.SuggestionsInfo;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.KeyboardId;
-import helium314.keyboard.keyboard.KeyboardLayoutSet;
-import helium314.keyboard.latin.DictionaryFacilitator;
-import helium314.keyboard.latin.DictionaryFacilitatorLruCache;
-import helium314.keyboard.latin.InputAttributes;
-import helium314.keyboard.latin.NgramContext;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodSubtype;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.settings.Defaults;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.SubtypeSettings;
-import helium314.keyboard.latin.utils.SubtypeUtilsAdditional;
-import helium314.keyboard.latin.utils.SuggestionResults;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.KeyboardId;
+import com.keyfluent.keyboard.keyboard.KeyboardLayoutSet;
+import com.keyfluent.keyboard.latin.DictionaryFacilitator;
+import com.keyfluent.keyboard.latin.DictionaryFacilitatorLruCache;
+import com.keyfluent.keyboard.latin.InputAttributes;
+import com.keyfluent.keyboard.latin.NgramContext;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodSubtype;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.settings.Defaults;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings;
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsAdditional;
+import com.keyfluent.keyboard.latin.utils.SuggestionResults;
 
 import java.util.Locale;
 import java.util.concurrent.ConcurrentHashMap;

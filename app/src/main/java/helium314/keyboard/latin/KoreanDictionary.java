@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
-import helium314.keyboard.event.HangulCombiner;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.event.HangulCombiner;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
 
 import java.text.Normalizer;
 import java.util.ArrayList;

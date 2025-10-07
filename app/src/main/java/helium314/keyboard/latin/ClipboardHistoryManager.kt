@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import android.content.ClipboardManager
 import android.content.Context
@@ -12,16 +12,16 @@ import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import androidx.core.view.isGone
 import kotlinx.serialization.json.Json
-import helium314.keyboard.compat.ClipboardManagerCompat
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.common.ColorType
-import helium314.keyboard.latin.common.isValidNumber
-import helium314.keyboard.latin.databinding.ClipboardSuggestionBinding
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.InputTypeUtils
-import helium314.keyboard.latin.utils.ToolbarKey
-import helium314.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.compat.ClipboardManagerCompat
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.common.ColorType
+import com.keyfluent.keyboard.latin.common.isValidNumber
+import com.keyfluent.keyboard.latin.databinding.ClipboardSuggestionBinding
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.InputTypeUtils
+import com.keyfluent.keyboard.latin.utils.ToolbarKey
+import com.keyfluent.keyboard.latin.utils.prefs
 import kotlin.collections.ArrayList
 
 class ClipboardHistoryManager(

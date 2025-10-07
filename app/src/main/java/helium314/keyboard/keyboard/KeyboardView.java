@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
-import static helium314.keyboard.keyboard.KeyboardTheme.STYLE_ROUNDED;
+import static com.keyfluent.keyboard.keyboard.KeyboardTheme.STYLE_ROUNDED;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,19 +27,19 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.keyboard.emoji.EmojiPageKeyboardView;
-import helium314.keyboard.keyboard.internal.KeyDrawParams;
-import helium314.keyboard.keyboard.internal.KeyVisualAttributes;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.StringUtilsKt;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.suggestions.MoreSuggestions;
-import helium314.keyboard.latin.suggestions.PopupSuggestionsView;
-import helium314.keyboard.latin.utils.TypefaceUtils;
+import com.keyfluent.keyboard.keyboard.emoji.EmojiPageKeyboardView;
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.KeyVisualAttributes;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.StringUtilsKt;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.suggestions.MoreSuggestions;
+import com.keyfluent.keyboard.latin.suggestions.PopupSuggestionsView;
+import com.keyfluent.keyboard.latin.utils.TypefaceUtils;
 
 import java.util.HashSet;
 

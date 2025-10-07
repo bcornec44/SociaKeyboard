@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.Context;
 import android.util.LruCache;
@@ -12,10 +12,10 @@ import android.util.LruCache;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
-import helium314.keyboard.latin.utils.SuggestionResults;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.latin.utils.SuggestionResults;
 
 import java.util.List;
 import java.util.Locale;

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import android.content.Intent
 import androidx.compose.animation.AnimatedVisibility
@@ -35,19 +35,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
-import helium314.keyboard.compat.locale
-import helium314.keyboard.latin.Dictionary
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.LocaleUtils.localizedDisplayName
-import helium314.keyboard.latin.utils.DictionaryInfoUtils
-import helium314.keyboard.latin.utils.createDictionaryTextAnnotated
-import helium314.keyboard.settings.DeleteButton
-import helium314.keyboard.settings.ExpandButton
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.dictionaryFilePicker
-import helium314.keyboard.settings.preferences.PreferenceCategory
-import helium314.keyboard.settings.previewDark
-import helium314.keyboard.settings.screens.getUserAndInternalDictionaries
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.latin.Dictionary
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.LocaleUtils.localizedDisplayName
+import com.keyfluent.keyboard.latin.utils.DictionaryInfoUtils
+import com.keyfluent.keyboard.latin.utils.createDictionaryTextAnnotated
+import com.keyfluent.keyboard.settings.DeleteButton
+import com.keyfluent.keyboard.settings.ExpandButton
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.dictionaryFilePicker
+import com.keyfluent.keyboard.settings.preferences.PreferenceCategory
+import com.keyfluent.keyboard.settings.previewDark
+import com.keyfluent.keyboard.settings.screens.getUserAndInternalDictionaries
 import java.io.File
 import java.util.Locale
 

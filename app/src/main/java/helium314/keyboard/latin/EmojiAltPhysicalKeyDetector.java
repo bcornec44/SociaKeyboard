@@ -4,17 +4,17 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.res.Resources;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 import android.util.Pair;
 import android.view.KeyEvent;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.keyboard.KeyboardSwitcher;
-import helium314.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher;
+import com.keyfluent.keyboard.latin.settings.Settings;
 
 import java.util.ArrayList;
 import java.util.HashSet;

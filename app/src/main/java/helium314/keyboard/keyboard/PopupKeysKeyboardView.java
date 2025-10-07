@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -18,15 +18,15 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.accessibility.PopupKeysKeyboardAccessibilityDelegate;
-import helium314.keyboard.keyboard.emoji.OnKeyEventListener;
-import helium314.keyboard.keyboard.internal.KeyDrawParams;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodManager;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.CoordinateUtils;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.accessibility.PopupKeysKeyboardAccessibilityDelegate;
+import com.keyfluent.keyboard.keyboard.emoji.OnKeyEventListener;
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodManager;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.CoordinateUtils;
 
 /**
  * A view that renders a virtual {@link PopupKeysKeyboard}. It handles rendering of keys and

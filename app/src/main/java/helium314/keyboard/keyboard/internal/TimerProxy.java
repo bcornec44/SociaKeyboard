@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.PointerTracker;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.keyboard.PointerTracker;
 
 public interface TimerProxy {
     /**

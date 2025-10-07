@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.text.TextUtils;
 
-import helium314.keyboard.event.Event;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.define.DecoderSpecificConstants;
+import com.keyfluent.keyboard.event.Event;
+import com.keyfluent.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.define.DecoderSpecificConstants;
 
 import java.util.ArrayList;
 

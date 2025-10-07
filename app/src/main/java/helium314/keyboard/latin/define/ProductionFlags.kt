@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.define
+package com.keyfluent.keyboard.latin.define
 
 object ProductionFlags {
     const val IS_HARDWARE_KEYBOARD_SUPPORTED = false
@@ -15,7 +15,7 @@ object ProductionFlags {
 
     /**
      * Include all suggestions from all dictionaries in
-     * [helium314.keyboard.latin.SuggestedWords.mRawSuggestions].
+     * [com.keyfluent.keyboard.latin.SuggestedWords.mRawSuggestions].
      */
     const val INCLUDE_RAW_SUGGESTIONS = false
 }

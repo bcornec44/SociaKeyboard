@@ -1,11 +1,11 @@
-SociaKeyboard to dbająca o prywatność klawiatura typu open source, oparta na AOSP / OpenBoard.
+KeyFluent to dbająca o prywatność klawiatura typu open source, oparta na AOSP / OpenBoard.
 Nie korzysta z uprawnień do internetu, więc jest w 100% offline.
 
 Funkcje:
 <ul>
   <li>Dodawaj słowniki, aby otrzymywać sugestie i sprawdzać pisownię</li>
   <ul>
-    <li>stwórz własny lub pobierz  <a href="https://codeberg.org/Helium314/aosp-dictionaries#dictionaries">stąd</a> albo z sekcji <a href="https://codeberg.org/Helium314/aosp-dictionaries#experimental-dictionaries">eksperymentalnej</a> (jakość może być różna)</li>
+    <li>stwórz własny lub pobierz  <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#dictionaries">stąd</a> albo z sekcji <a href="https://codeberg.org/Keyfluent/aosp-dictionaries#experimental-dictionaries">eksperymentalnej</a> (jakość może być różna)</li>
     <li>dodatkowe słowniki dla emoji lub symboli naukowych można wykorzystać do otrzymywania sugestii (coś w stylu "wyszukiwania emoji")</li>
     <li>weź pod uwagę, że w przypadku układów koreańskich sugestie działają tylko przy użyciu <a href="https://github.com/openboard-team/openboard/commit/83fca9533c03b9fecc009fc632577226bbd6301f">tego słownika</a>, narzędzia w repozytorium nie są w stanie stworzyć działających słowników</li>
   </ul>
@@ -14,7 +14,7 @@ Funkcje:
     <li>może śledzić ustawienie dzień/noc w systemie Android 10+ (oraz w niektórych wersjach Androida 9)</li>
     <li>może stosować dynamiczne kolory w systemie Android 12+</li>
   </ul>
-  <li>Dostosuj <a href="https://github.com/Helium314/SociaKeyboard/blob/main/layouts.md">układy</a> klawiatury (możliwe tylko po wyłączeniu opcji <i>użyj języków systemu</i>)</li>
+  <li>Dostosuj <a href="https://github.com/Keyfluent/KeyFluent/blob/main/layouts.md">układy</a> klawiatury (możliwe tylko po wyłączeniu opcji <i>użyj języków systemu</i>)</li>
   <li>Dostosuj układy specjalne, takie jak symbole, liczby lub układ klawiszy funkcyjnych</li>
   <li>Pisanie wielojęzyczne</li>
   <li>Pisanie gestami (<i>tylko z zamkniętą biblioteką</i> ☹️)</li>

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.text.TextUtils;
 import android.view.inputmethod.CompletionInfo;
@@ -12,9 +12,9 @@ import android.view.inputmethod.CompletionInfo;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.settings.Settings;
 
 import java.util.ArrayList;
 import java.util.Arrays;

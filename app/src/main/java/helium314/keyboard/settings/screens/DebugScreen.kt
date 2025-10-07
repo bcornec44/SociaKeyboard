@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import android.content.Context
 import android.content.Intent
@@ -10,22 +10,22 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.DictionaryDumpBroadcastReceiver
-import helium314.keyboard.latin.DictionaryFacilitator
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.settings.DebugSettings
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.preferences.Preference
-import helium314.keyboard.settings.SearchSettingsScreen
-import helium314.keyboard.settings.preferences.SwitchPreference
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.preferences.PreferenceCategory
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.DictionaryDumpBroadcastReceiver
+import com.keyfluent.keyboard.latin.DictionaryFacilitator
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.settings.DebugSettings
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.preferences.Preference
+import com.keyfluent.keyboard.settings.SearchSettingsScreen
+import com.keyfluent.keyboard.settings.preferences.SwitchPreference
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.preferences.PreferenceCategory
+import com.keyfluent.keyboard.settings.previewDark
 
 @Composable
 fun DebugScreen(

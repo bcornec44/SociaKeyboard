@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import android.content.Intent
 import androidx.compose.foundation.layout.Column
@@ -16,20 +16,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import helium314.keyboard.compat.locale
-import helium314.keyboard.dictionarypack.DictionaryPackConstants
-import helium314.keyboard.latin.Dictionary
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.ReadOnlyBinaryDictionary
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.common.LocaleUtils.localizedDisplayName
-import helium314.keyboard.latin.makedict.DictionaryHeader
-import helium314.keyboard.latin.utils.DictionaryInfoUtils
-import helium314.keyboard.latin.utils.ScriptUtils.script
-import helium314.keyboard.latin.utils.SubtypeSettings
-import helium314.keyboard.latin.utils.locale
-import helium314.keyboard.settings.DropDownField
-import helium314.keyboard.settings.WithSmallTitle
+import com.keyfluent.keyboard.compat.locale
+import com.keyfluent.keyboard.dictionarypack.DictionaryPackConstants
+import com.keyfluent.keyboard.latin.Dictionary
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.ReadOnlyBinaryDictionary
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.common.LocaleUtils.localizedDisplayName
+import com.keyfluent.keyboard.latin.makedict.DictionaryHeader
+import com.keyfluent.keyboard.latin.utils.DictionaryInfoUtils
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings
+import com.keyfluent.keyboard.latin.utils.locale
+import com.keyfluent.keyboard.settings.DropDownField
+import com.keyfluent.keyboard.settings.WithSmallTitle
 import java.io.File
 import java.util.Locale
 

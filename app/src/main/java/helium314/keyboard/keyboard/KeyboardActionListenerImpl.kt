@@ -1,18 +1,18 @@
-package helium314.keyboard.keyboard
+package com.keyfluent.keyboard.keyboard
 
 import android.text.InputType
 import android.view.KeyEvent
 import android.view.inputmethod.InputMethodSubtype
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.LatinIME
-import helium314.keyboard.latin.RichInputMethodManager
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.InputPointers
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.common.loopOverCodePoints
-import helium314.keyboard.latin.common.loopOverCodePointsBackwards
-import helium314.keyboard.latin.inputlogic.InputLogic
-import helium314.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.LatinIME
+import com.keyfluent.keyboard.latin.RichInputMethodManager
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.InputPointers
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.common.loopOverCodePoints
+import com.keyfluent.keyboard.latin.common.loopOverCodePointsBackwards
+import com.keyfluent.keyboard.latin.inputlogic.InputLogic
+import com.keyfluent.keyboard.latin.settings.Settings
 import kotlin.math.abs
 
 class KeyboardActionListenerImpl(private val latinIME: LatinIME, private val inputLogic: InputLogic) : KeyboardActionListener {
@@ -217,7 +217,7 @@ class KeyboardActionListenerImpl(private val latinIME: LatinIME, private val inp
         // issues:
         //  * setSelection "will cause the editor to call onUpdateSelection", see: https://developer.android.com/reference/android/view/inputmethod/InputConnection#setSelection(int,%20int)
         //     but Firefox is simply not doing this within the same word... WTF?
-        //     https://github.com/Helium314/SociaKeyboard/issues/1139#issuecomment-2588169384
+        //     https://github.com/Keyfluent/KeyFluent/issues/1139#issuecomment-2588169384
         //  * inputType is NOT if variant InputType.TYPE_TEXT_VARIATION_WEB_EDIT_TEXT (variant appears to always be 0)
         //     so we can't even only do it for browsers (identifying by app name will break for forks)
         // best "solution" is not doing this for InputType variation 0 but this applies to the majority of text fields...

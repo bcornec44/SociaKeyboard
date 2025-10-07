@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin.settings
+package com.keyfluent.keyboard.latin.settings
 
 import android.content.SharedPreferences
 import android.os.Build
 import android.view.inputmethod.InputMethodSubtype
-import helium314.keyboard.latin.common.Constants.Separators
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.define.DebugFlags
-import helium314.keyboard.latin.utils.LayoutType
-import helium314.keyboard.latin.utils.LayoutType.Companion.toExtraValue
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.ScriptUtils
-import helium314.keyboard.latin.utils.ScriptUtils.script
-import helium314.keyboard.latin.utils.SubtypeSettings
-import helium314.keyboard.latin.utils.SubtypeUtilsAdditional
-import helium314.keyboard.latin.utils.locale
+import com.keyfluent.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue.KEYBOARD_LAYOUT_SET
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.define.DebugFlags
+import com.keyfluent.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.LayoutType.Companion.toExtraValue
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.ScriptUtils
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsAdditional
+import com.keyfluent.keyboard.latin.utils.locale
 import java.util.Locale
 
 // some kind of intermediate between the string stored in preferences and an InputMethodSubtype

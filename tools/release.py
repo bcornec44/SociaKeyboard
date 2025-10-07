@@ -18,16 +18,16 @@ def check_git():
 
 # download and update translations
 def update_translations():
-    url = "https://translate.codeberg.org/download/sociakeyboard/?format=zip"
+    url = "https://translate.codeberg.org/download/keyfluent/?format=zip"
     zip_file_name = "translations.zip"
     urlretrieve(url, zip_file_name)
-    # extract all in sociakeyboard/sociakeyboard/app/src/main/res and sociakeyboard/sociakeyboard/fastlane/metadata
+    # extract all in keyfluent/keyfluent/app/src/main/res and keyfluent/keyfluent/fastlane/metadata
     with zipfile.ZipFile(zip_file_name, "r") as f:
         for file in f.filelist:
-            if not file.filename.startswith("sociakeyboard/sociakeyboard/app/src/main/res")\
-                    and not file.filename.startswith("sociakeyboard/sociakeyboard/fastlane/metadata"):
+            if not file.filename.startswith("keyfluent/keyfluent/app/src/main/res")\
+                    and not file.filename.startswith("keyfluent/keyfluent/fastlane/metadata"):
                 continue
-            file.filename = file.filename.replace("sociakeyboard/sociakeyboard/", "")
+            file.filename = file.filename.replace("keyfluent/keyfluent/", "")
             f.extract(file)
     os.remove(zip_file_name)
 
@@ -46,7 +46,7 @@ def read_dicts_readme() -> list[str]:
         lines = f.readlines()
         f.close()
         return lines
-    readme_url = "https://codeberg.org/Helium314/aosp-dictionaries/raw/branch/main/README.md"
+    readme_url = "https://codeberg.org/Keyfluent/aosp-dictionaries/raw/branch/main/README.md"
     tmp_readme = "dicts_readme_tmp.md"
     urlretrieve(readme_url, tmp_readme)
     f = open(tmp_readme)
@@ -56,8 +56,8 @@ def read_dicts_readme() -> list[str]:
     return lines
 
 
-# generate a list of dictionaries available in the dictionaries repository at (https://codeberg.org/Helium314/aosp-dictionaries
-# for convenient linking when adding dictionaries in SociaKeyboard.
+# generate a list of dictionaries available in the dictionaries repository at (https://codeberg.org/Keyfluent/aosp-dictionaries
+# for convenient linking when adding dictionaries in KeyFluent.
 def update_dict_list():
     lines = read_dicts_readme()
     mode = 0

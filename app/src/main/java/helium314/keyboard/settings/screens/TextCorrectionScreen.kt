@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import android.Manifest
 import android.content.Context
@@ -17,28 +17,28 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.permissions.PermissionsUtil
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.JniUtils
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.NextScreenIcon
-import helium314.keyboard.settings.preferences.ListPreference
-import helium314.keyboard.settings.SettingsWithoutKey
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.preferences.Preference
-import helium314.keyboard.settings.SearchSettingsScreen
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.SettingsDestination
-import helium314.keyboard.settings.preferences.SwitchPreference
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.dialogs.ConfirmationDialog
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.permissions.PermissionsUtil
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.JniUtils
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.NextScreenIcon
+import com.keyfluent.keyboard.settings.preferences.ListPreference
+import com.keyfluent.keyboard.settings.SettingsWithoutKey
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.preferences.Preference
+import com.keyfluent.keyboard.settings.SearchSettingsScreen
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.SettingsDestination
+import com.keyfluent.keyboard.settings.preferences.SwitchPreference
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.dialogs.ConfirmationDialog
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
 
 @Composable
 fun TextCorrectionScreen(

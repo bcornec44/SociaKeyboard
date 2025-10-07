@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -22,23 +22,23 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.net.toUri
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.Links
-import helium314.keyboard.latin.settings.DebugSettings
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.SpannableStringUtils
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.SettingsContainer
-import helium314.keyboard.settings.SettingsWithoutKey
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.preferences.Preference
-import helium314.keyboard.settings.SearchSettingsScreen
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.Links
+import com.keyfluent.keyboard.latin.settings.DebugSettings
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.SpannableStringUtils
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.SettingsContainer
+import com.keyfluent.keyboard.settings.SettingsWithoutKey
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.preferences.Preference
+import com.keyfluent.keyboard.settings.SearchSettingsScreen
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.previewDark
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat

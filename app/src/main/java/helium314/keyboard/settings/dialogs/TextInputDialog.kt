@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.text.KeyboardOptions
@@ -21,9 +21,9 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.DialogProperties
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.contentTextDirectionStyle
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.contentTextDirectionStyle
+import com.keyfluent.keyboard.settings.previewDark
 
 // mostly taken from StreetComplete / SCEE
 /** Dialog with which to input text. OK button is only clickable if [checkTextValid] returns true. */

@@ -1,12 +1,12 @@
-package helium314.keyboard.latin.utils
+package com.keyfluent.keyboard.latin.utils
 
 import android.content.Context
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.SimplePopups
-import helium314.keyboard.keyboard.internal.keyboard_parser.getOrCreate
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.settings.Defaults.default
-import helium314.keyboard.latin.utils.LayoutType.Companion.folder
-import helium314.keyboard.latin.utils.ScriptUtils.script
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.SimplePopups
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.getOrCreate
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.settings.Defaults.default
+import com.keyfluent.keyboard.latin.utils.LayoutType.Companion.folder
+import com.keyfluent.keyboard.latin.utils.ScriptUtils.script
 import java.io.File
 import java.util.Locale
 

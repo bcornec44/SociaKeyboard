@@ -3,25 +3,25 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import android.text.TextUtils
 import com.android.inputmethod.latin.utils.BinaryDictionaryUtils
-import helium314.keyboard.keyboard.Keyboard
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo
-import helium314.keyboard.latin.common.ComposedData
-import helium314.keyboard.latin.common.Constants
-import helium314.keyboard.latin.common.InputPointers
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.define.DebugFlags
-import helium314.keyboard.latin.define.DecoderSpecificConstants.SHOULD_AUTO_CORRECT_USING_NON_WHITE_LISTED_SUGGESTION
-import helium314.keyboard.latin.define.DecoderSpecificConstants.SHOULD_REMOVE_PREVIOUSLY_REJECTED_SUGGESTION
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion
-import helium314.keyboard.latin.suggestions.SuggestionStripView
-import helium314.keyboard.latin.utils.AutoCorrectionUtils
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.SuggestionResults
+import com.keyfluent.keyboard.keyboard.Keyboard
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo
+import com.keyfluent.keyboard.latin.common.ComposedData
+import com.keyfluent.keyboard.latin.common.Constants
+import com.keyfluent.keyboard.latin.common.InputPointers
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.define.DebugFlags
+import com.keyfluent.keyboard.latin.define.DecoderSpecificConstants.SHOULD_AUTO_CORRECT_USING_NON_WHITE_LISTED_SUGGESTION
+import com.keyfluent.keyboard.latin.define.DecoderSpecificConstants.SHOULD_REMOVE_PREVIOUSLY_REJECTED_SUGGESTION
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion
+import com.keyfluent.keyboard.latin.suggestions.SuggestionStripView
+import com.keyfluent.keyboard.latin.utils.AutoCorrectionUtils
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.SuggestionResults
 import java.util.Locale
 
 /**

@@ -10,7 +10,7 @@ android {
     buildToolsVersion = "34.0.0"
 
     defaultConfig {
-        applicationId = "helium314.keyboard"
+        applicationId = "com.keyfluent.keyboard"
         minSdk = 21
         targetSdk = 35
         versionCode = 3007
@@ -53,7 +53,7 @@ android {
             signingConfig = signingConfigs.getByName("debug")
             applicationIdSuffix = ".debug"
         }
-        base.archivesBaseName = "SociaKeyboard_" + defaultConfig.versionName
+        base.archivesBaseName = "KeyFluent_" + defaultConfig.versionName
     }
 
     buildFeatures {
@@ -91,13 +91,13 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
-    // see https://github.com/Helium314/SociaKeyboard/issues/477
+    // see https://github.com/Keyfluent/KeyFluent/issues/477
     dependenciesInfo {
         includeInApk = false
         includeInBundle = false
     }
 
-    namespace = "helium314.keyboard.latin"
+    namespace = "com.keyfluent.keyboard.latin"
     lint {
         abortOnError = true
     }

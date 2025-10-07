@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings
+package com.keyfluent.keyboard.settings
 
 import android.graphics.drawable.VectorDrawable
 import androidx.annotation.DrawableRes

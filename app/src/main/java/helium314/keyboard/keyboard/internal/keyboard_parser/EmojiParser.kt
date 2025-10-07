@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.keyboard.internal.keyboard_parser
+package com.keyfluent.keyboard.keyboard.internal.keyboard_parser
 
 import android.content.Context
-import helium314.keyboard.keyboard.Key
-import helium314.keyboard.keyboard.Key.KeyParams
-import helium314.keyboard.keyboard.KeyboardId
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ResourceUtils
+import com.keyfluent.keyboard.keyboard.Key
+import com.keyfluent.keyboard.keyboard.Key.KeyParams
+import com.keyfluent.keyboard.keyboard.KeyboardId
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ResourceUtils
 import kotlin.math.sqrt
 
 class EmojiParser(private val params: KeyboardParams, private val context: Context, private val maxSdk: Int) {

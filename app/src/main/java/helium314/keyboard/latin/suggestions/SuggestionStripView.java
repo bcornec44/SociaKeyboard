@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.suggestions;
+package com.keyfluent.keyboard.latin.suggestions;
 
-import static helium314.keyboard.latin.utils.ToolbarUtilsKt.*;
+import static com.keyfluent.keyboard.latin.utils.ToolbarUtilsKt.*;
 
 import android.annotation.SuppressLint;
 import android.app.KeyguardManager;
@@ -39,33 +39,33 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import android.inputmethodservice.InputMethodService;
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.keyboard.Keyboard;
-import helium314.keyboard.keyboard.KeyboardSwitcher;
-import helium314.keyboard.keyboard.MainKeyboardView;
-import helium314.keyboard.keyboard.PopupKeysPanel;
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.AudioAndHapticFeedbackManager;
-import helium314.keyboard.latin.Dictionary;
-import helium314.keyboard.latin.LatinIME;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.settings.DebugSettings;
-import helium314.keyboard.latin.settings.Defaults;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.settings.SettingsValues;
-import helium314.keyboard.latin.suggestions.PopupSuggestionsView.MoreSuggestionsListener;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.ToolbarKey;
-import helium314.keyboard.latin.utils.ToolbarUtilsKt;
-import helium314.keyboard.latin.utils.TranslatorUtils;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.keyboard.Keyboard;
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher;
+import com.keyfluent.keyboard.keyboard.MainKeyboardView;
+import com.keyfluent.keyboard.keyboard.PopupKeysPanel;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.AudioAndHapticFeedbackManager;
+import com.keyfluent.keyboard.latin.Dictionary;
+import com.keyfluent.keyboard.latin.LatinIME;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.settings.DebugSettings;
+import com.keyfluent.keyboard.latin.settings.Defaults;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.suggestions.PopupSuggestionsView.MoreSuggestionsListener;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.ToolbarKey;
+import com.keyfluent.keyboard.latin.utils.ToolbarUtilsKt;
+import com.keyfluent.keyboard.latin.utils.TranslatorUtils;
 
 import kotlinx.coroutines.DelicateCoroutinesApi;
 import kotlin.OptIn;
@@ -345,7 +345,7 @@ public final class SuggestionStripView extends RelativeLayout implements OnClick
     public void onVisibilityChanged(@NonNull final View view, final int visibility) {
         super.onVisibilityChanged(view, visibility);
         if (view == this)
-            // workaround for a bug with inline suggestions views that just keep showing up otherwise, https://github.com/Helium314/SociaKeyboard/pull/386
+            // workaround for a bug with inline suggestions views that just keep showing up otherwise, https://github.com/Keyfluent/KeyFluent/pull/386
             mSuggestionsStrip.setVisibility(visibility);
     }
 

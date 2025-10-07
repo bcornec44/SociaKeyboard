@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.LocalTextStyle
@@ -15,9 +15,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.latin.R
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.previewDark
 
 @Composable
 fun SliderDialog(

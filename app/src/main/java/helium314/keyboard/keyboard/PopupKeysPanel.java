@@ -4,11 +4,11 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.view.View;
 import android.view.ViewGroup;
-import helium314.keyboard.keyboard.emoji.OnKeyEventListener;
+import com.keyfluent.keyboard.keyboard.emoji.OnKeyEventListener;
 
 public interface PopupKeysPanel {
     interface Controller {

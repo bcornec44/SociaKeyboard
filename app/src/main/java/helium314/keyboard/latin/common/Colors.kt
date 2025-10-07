@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
-package helium314.keyboard.latin.common
+package com.keyfluent.keyboard.latin.common
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -23,16 +23,16 @@ import androidx.core.graphics.BlendModeCompat
 import androidx.core.graphics.ColorUtils
 import androidx.core.graphics.drawable.DrawableCompat
 import androidx.core.graphics.drawable.toBitmap
-import helium314.keyboard.keyboard.KeyboardTheme.Companion.STYLE_HOLO
-import helium314.keyboard.keyboard.KeyboardTheme.Companion.STYLE_MATERIAL
-import helium314.keyboard.latin.common.ColorType.*
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.utils.adjustLuminosityAndKeepAlpha
-import helium314.keyboard.latin.utils.brighten
-import helium314.keyboard.latin.utils.brightenOrDarken
-import helium314.keyboard.latin.utils.darken
-import helium314.keyboard.latin.utils.isBrightColor
-import helium314.keyboard.latin.utils.isDarkColor
+import com.keyfluent.keyboard.keyboard.KeyboardTheme.Companion.STYLE_HOLO
+import com.keyfluent.keyboard.keyboard.KeyboardTheme.Companion.STYLE_MATERIAL
+import com.keyfluent.keyboard.latin.common.ColorType.*
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.utils.adjustLuminosityAndKeepAlpha
+import com.keyfluent.keyboard.latin.utils.brighten
+import com.keyfluent.keyboard.latin.utils.brightenOrDarken
+import com.keyfluent.keyboard.latin.utils.darken
+import com.keyfluent.keyboard.latin.utils.isBrightColor
+import com.keyfluent.keyboard.latin.utils.isDarkColor
 import java.util.EnumMap
 
 interface Colors {

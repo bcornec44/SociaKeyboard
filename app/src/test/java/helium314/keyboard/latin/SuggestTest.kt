@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.latin
+package com.keyfluent.keyboard.latin
 
 import androidx.core.content.edit
-import helium314.keyboard.ShadowBinaryDictionaryUtils
-import helium314.keyboard.ShadowInputMethodManager2
-import helium314.keyboard.ShadowLocaleManagerCompat
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_FLAG_APPROPRIATE_FOR_AUTO_CORRECTION
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_SHORTCUT
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_WHITELIST
-import helium314.keyboard.latin.common.ComposedData
-import helium314.keyboard.latin.common.StringUtils
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion
-import helium314.keyboard.latin.utils.DeviceProtectedUtils
-import helium314.keyboard.latin.utils.SuggestionResults
-import helium314.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.ShadowBinaryDictionaryUtils
+import com.keyfluent.keyboard.ShadowInputMethodManager2
+import com.keyfluent.keyboard.ShadowLocaleManagerCompat
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_FLAG_APPROPRIATE_FOR_AUTO_CORRECTION
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_SHORTCUT
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo.KIND_WHITELIST
+import com.keyfluent.keyboard.latin.common.ComposedData
+import com.keyfluent.keyboard.latin.common.StringUtils
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion
+import com.keyfluent.keyboard.latin.utils.DeviceProtectedUtils
+import com.keyfluent.keyboard.latin.utils.SuggestionResults
+import com.keyfluent.keyboard.latin.utils.prefs
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner

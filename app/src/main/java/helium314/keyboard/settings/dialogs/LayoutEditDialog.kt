@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.WindowInsets
@@ -20,20 +20,20 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
-import helium314.keyboard.keyboard.KeyboardSwitcher
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.utils.LayoutType
-import helium314.keyboard.latin.utils.LayoutUtilsCustom
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.SubtypeSettings
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.getStringResourceOrName
-import helium314.keyboard.settings.CloseIcon
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.contentTextDirectionStyle
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.keyboard.KeyboardSwitcher
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.LayoutUtilsCustom
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.getStringResourceOrName
+import com.keyfluent.keyboard.settings.CloseIcon
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.contentTextDirectionStyle
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

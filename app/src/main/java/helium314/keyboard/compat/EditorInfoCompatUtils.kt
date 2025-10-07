@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.compat
+package com.keyfluent.keyboard.compat
 
 import android.os.Build
 import android.view.inputmethod.EditorInfo

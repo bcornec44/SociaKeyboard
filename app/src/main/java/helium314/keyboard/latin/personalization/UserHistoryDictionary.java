@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.personalization;
+package com.keyfluent.keyboard.latin.personalization;
 
 import android.content.Context;
 
@@ -12,10 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.android.inputmethod.latin.BinaryDictionary;
-import helium314.keyboard.latin.Dictionary;
-import helium314.keyboard.latin.ExpandableBinaryDictionary;
-import helium314.keyboard.latin.NgramContext;
-import helium314.keyboard.latin.makedict.DictionaryHeader;
+import com.keyfluent.keyboard.latin.Dictionary;
+import com.keyfluent.keyboard.latin.ExpandableBinaryDictionary;
+import com.keyfluent.keyboard.latin.NgramContext;
+import com.keyfluent.keyboard.latin.makedict.DictionaryHeader;
 
 import java.io.File;
 import java.util.Locale;

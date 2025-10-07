@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.screens
+package com.keyfluent.keyboard.settings.screens
 
 import android.content.Context
 import android.os.Build
@@ -25,29 +25,29 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.Constants.Separators
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue
-import helium314.keyboard.latin.common.LocaleUtils.constructLocale
-import helium314.keyboard.latin.common.LocaleUtils.localizedDisplayName
-import helium314.keyboard.latin.common.splitOnWhitespace
-import helium314.keyboard.latin.settings.Defaults
-import helium314.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
-import helium314.keyboard.latin.utils.DictionaryInfoUtils
-import helium314.keyboard.latin.utils.Log
-import helium314.keyboard.latin.utils.MissingDictionaryDialog
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils
-import helium314.keyboard.latin.utils.SubtypeSettings
-import helium314.keyboard.latin.utils.displayName
-import helium314.keyboard.latin.utils.getActivity
-import helium314.keyboard.latin.utils.locale
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.SearchScreen
-import helium314.keyboard.settings.SettingsActivity
-import helium314.keyboard.settings.SettingsDestination
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue
+import com.keyfluent.keyboard.latin.common.LocaleUtils.constructLocale
+import com.keyfluent.keyboard.latin.common.LocaleUtils.localizedDisplayName
+import com.keyfluent.keyboard.latin.common.splitOnWhitespace
+import com.keyfluent.keyboard.latin.settings.Defaults
+import com.keyfluent.keyboard.latin.settings.SettingsSubtype.Companion.toSettingsSubtype
+import com.keyfluent.keyboard.latin.utils.DictionaryInfoUtils
+import com.keyfluent.keyboard.latin.utils.Log
+import com.keyfluent.keyboard.latin.utils.MissingDictionaryDialog
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings
+import com.keyfluent.keyboard.latin.utils.displayName
+import com.keyfluent.keyboard.latin.utils.getActivity
+import com.keyfluent.keyboard.latin.utils.locale
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.SearchScreen
+import com.keyfluent.keyboard.settings.SettingsActivity
+import com.keyfluent.keyboard.settings.SettingsDestination
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
 import java.util.Locale
 
 @Composable

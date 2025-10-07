@@ -4,14 +4,14 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin.utils;
+package com.keyfluent.keyboard.latin.utils;
 
 import android.view.inputmethod.InputMethodSubtype;
 
-import helium314.keyboard.latin.DictionaryFacilitator;
-import helium314.keyboard.latin.RichInputMethodManager;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.settings.SettingsValues;
+import com.keyfluent.keyboard.latin.DictionaryFacilitator;
+import com.keyfluent.keyboard.latin.RichInputMethodManager;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.settings.SettingsValues;
 
 @SuppressWarnings("unused")
 public final class StatsUtils {

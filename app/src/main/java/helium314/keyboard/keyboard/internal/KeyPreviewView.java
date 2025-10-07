@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard.internal;
+package com.keyfluent.keyboard.keyboard.internal;
 
 import android.content.Context;
 import android.graphics.Rect;
@@ -17,10 +17,10 @@ import android.util.TypedValue;
 import android.view.Gravity;
 import android.widget.TextView;
 
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.common.StringUtilsKt;
-import helium314.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.keyboard.Key;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.common.StringUtilsKt;
+import com.keyfluent.keyboard.latin.settings.Settings;
 
 import java.util.HashSet;
 

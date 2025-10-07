@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.dialogs
+package com.keyfluent.keyboard.settings.dialogs
 
 import android.graphics.drawable.VectorDrawable
 import androidx.compose.foundation.clickable
@@ -37,15 +37,15 @@ import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
 import androidx.core.util.TypedValueCompat
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.settings.customIconNames
-import helium314.keyboard.latin.utils.getStringResourceOrName
-import helium314.keyboard.latin.utils.prefs
-import helium314.keyboard.settings.Theme
-import helium314.keyboard.settings.initPreview
-import helium314.keyboard.settings.previewDark
-import helium314.keyboard.settings.screens.GetIcon
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.settings.customIconNames
+import com.keyfluent.keyboard.latin.utils.getStringResourceOrName
+import com.keyfluent.keyboard.latin.utils.prefs
+import com.keyfluent.keyboard.settings.Theme
+import com.keyfluent.keyboard.settings.initPreview
+import com.keyfluent.keyboard.settings.previewDark
+import com.keyfluent.keyboard.settings.screens.GetIcon
 import kotlinx.serialization.json.Json
 
 @Composable

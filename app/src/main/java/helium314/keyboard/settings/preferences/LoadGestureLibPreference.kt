@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-only
-package helium314.keyboard.settings.preferences
+package com.keyfluent.keyboard.settings.preferences
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -12,15 +12,15 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.common.FileUtils
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ChecksumCalculator
-import helium314.keyboard.latin.utils.JniUtils
-import helium314.keyboard.latin.utils.protectedPrefs
-import helium314.keyboard.settings.Setting
-import helium314.keyboard.settings.dialogs.ConfirmationDialog
-import helium314.keyboard.settings.filePicker
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.common.FileUtils
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ChecksumCalculator
+import com.keyfluent.keyboard.latin.utils.JniUtils
+import com.keyfluent.keyboard.latin.utils.protectedPrefs
+import com.keyfluent.keyboard.settings.Setting
+import com.keyfluent.keyboard.settings.dialogs.ConfirmationDialog
+import com.keyfluent.keyboard.settings.filePicker
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream

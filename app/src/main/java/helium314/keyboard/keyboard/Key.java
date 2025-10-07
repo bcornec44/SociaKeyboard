@@ -4,26 +4,26 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
-import helium314.keyboard.keyboard.internal.KeyDrawParams;
-import helium314.keyboard.keyboard.internal.KeySpecParser;
-import helium314.keyboard.keyboard.internal.KeyVisualAttributes;
-import helium314.keyboard.keyboard.internal.KeyboardIconsSet;
-import helium314.keyboard.keyboard.internal.KeyboardParams;
-import helium314.keyboard.keyboard.internal.PopupKeySpec;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.PopupSet;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.utils.PopupKeysUtilsKt;
-import helium314.keyboard.latin.utils.ToolbarKey;
-import helium314.keyboard.latin.utils.ToolbarUtilsKt;
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.KeySpecParser;
+import com.keyfluent.keyboard.keyboard.internal.KeyVisualAttributes;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardIconsSet;
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams;
+import com.keyfluent.keyboard.keyboard.internal.PopupKeySpec;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.PopupSet;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.StringUtils;
+import com.keyfluent.keyboard.latin.utils.PopupKeysUtilsKt;
+import com.keyfluent.keyboard.latin.utils.ToolbarKey;
+import com.keyfluent.keyboard.latin.utils.ToolbarUtilsKt;
 import kotlin.collections.ArraysKt;
 
 import java.util.Arrays;

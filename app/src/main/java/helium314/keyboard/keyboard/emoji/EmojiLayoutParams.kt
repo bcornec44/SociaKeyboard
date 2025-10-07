@@ -3,16 +3,16 @@
  * modified
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
-package helium314.keyboard.keyboard.emoji
+package com.keyfluent.keyboard.keyboard.emoji
 
 import android.content.res.Resources
 import android.view.View
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.RecyclerView
-import helium314.keyboard.keyboard.internal.KeyboardParams
-import helium314.keyboard.latin.R
-import helium314.keyboard.latin.settings.Settings
-import helium314.keyboard.latin.utils.ResourceUtils
+import com.keyfluent.keyboard.keyboard.internal.KeyboardParams
+import com.keyfluent.keyboard.latin.R
+import com.keyfluent.keyboard.latin.settings.Settings
+import com.keyfluent.keyboard.latin.utils.ResourceUtils
 
 internal class EmojiLayoutParams(res: Resources) {
     private val emojiListBottomMargin: Int

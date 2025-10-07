@@ -4,10 +4,10 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.InputPointers;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.InputPointers;
 
 public interface KeyboardActionListener {
     /**

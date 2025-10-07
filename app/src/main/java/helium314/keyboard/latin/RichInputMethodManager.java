@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -15,16 +15,16 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
 
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.latin.common.LocaleUtils;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.LanguageOnSpacebarUtils;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.ScriptUtils;
-import helium314.keyboard.latin.utils.SubtypeLocaleUtils;
-import helium314.keyboard.latin.utils.SubtypeSettings;
-import helium314.keyboard.latin.utils.SubtypeUtilsKt;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.latin.common.LocaleUtils;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.LanguageOnSpacebarUtils;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.ScriptUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeLocaleUtils;
+import com.keyfluent.keyboard.latin.utils.SubtypeSettings;
+import com.keyfluent.keyboard.latin.utils.SubtypeUtilsKt;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import static helium314.keyboard.latin.common.Constants.Subtype.KEYBOARD_MODE;
+import static com.keyfluent.keyboard.latin.common.Constants.Subtype.KEYBOARD_MODE;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

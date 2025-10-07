@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.keyboard;
+package com.keyfluent.keyboard.keyboard;
 
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
@@ -27,37 +27,37 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import helium314.keyboard.accessibility.AccessibilityUtils;
-import helium314.keyboard.accessibility.MainKeyboardAccessibilityDelegate;
-import helium314.keyboard.compat.ConfigurationCompatKt;
-import helium314.keyboard.keyboard.internal.DrawingPreviewPlacerView;
-import helium314.keyboard.keyboard.internal.DrawingProxy;
-import helium314.keyboard.keyboard.internal.GestureFloatingTextDrawingPreview;
-import helium314.keyboard.keyboard.internal.GestureTrailsDrawingPreview;
-import helium314.keyboard.keyboard.internal.KeyDrawParams;
-import helium314.keyboard.keyboard.internal.KeyPreviewChoreographer;
-import helium314.keyboard.keyboard.internal.KeyPreviewDrawParams;
-import helium314.keyboard.keyboard.internal.KeyPreviewView;
-import helium314.keyboard.keyboard.internal.PopupKeySpec;
-import helium314.keyboard.keyboard.internal.NonDistinctMultitouchHelper;
-import helium314.keyboard.keyboard.internal.SlidingKeyInputDrawingPreview;
-import helium314.keyboard.keyboard.internal.TimerHandler;
-import helium314.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
-import helium314.keyboard.latin.R;
-import helium314.keyboard.latin.RichInputMethodSubtype;
-import helium314.keyboard.latin.SuggestedWords;
-import helium314.keyboard.latin.common.ColorType;
-import helium314.keyboard.latin.common.Colors;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.CoordinateUtils;
-import helium314.keyboard.latin.define.DebugFlags;
-import helium314.keyboard.latin.settings.DebugSettings;
-import helium314.keyboard.latin.settings.Defaults;
-import helium314.keyboard.latin.settings.Settings;
-import helium314.keyboard.latin.utils.KtxKt;
-import helium314.keyboard.latin.utils.LanguageOnSpacebarUtils;
-import helium314.keyboard.latin.utils.Log;
-import helium314.keyboard.latin.utils.TypefaceUtils;
+import com.keyfluent.keyboard.accessibility.AccessibilityUtils;
+import com.keyfluent.keyboard.accessibility.MainKeyboardAccessibilityDelegate;
+import com.keyfluent.keyboard.compat.ConfigurationCompatKt;
+import com.keyfluent.keyboard.keyboard.internal.DrawingPreviewPlacerView;
+import com.keyfluent.keyboard.keyboard.internal.DrawingProxy;
+import com.keyfluent.keyboard.keyboard.internal.GestureFloatingTextDrawingPreview;
+import com.keyfluent.keyboard.keyboard.internal.GestureTrailsDrawingPreview;
+import com.keyfluent.keyboard.keyboard.internal.KeyDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.KeyPreviewChoreographer;
+import com.keyfluent.keyboard.keyboard.internal.KeyPreviewDrawParams;
+import com.keyfluent.keyboard.keyboard.internal.KeyPreviewView;
+import com.keyfluent.keyboard.keyboard.internal.PopupKeySpec;
+import com.keyfluent.keyboard.keyboard.internal.NonDistinctMultitouchHelper;
+import com.keyfluent.keyboard.keyboard.internal.SlidingKeyInputDrawingPreview;
+import com.keyfluent.keyboard.keyboard.internal.TimerHandler;
+import com.keyfluent.keyboard.keyboard.internal.keyboard_parser.floris.KeyCode;
+import com.keyfluent.keyboard.latin.R;
+import com.keyfluent.keyboard.latin.RichInputMethodSubtype;
+import com.keyfluent.keyboard.latin.SuggestedWords;
+import com.keyfluent.keyboard.latin.common.ColorType;
+import com.keyfluent.keyboard.latin.common.Colors;
+import com.keyfluent.keyboard.latin.common.Constants;
+import com.keyfluent.keyboard.latin.common.CoordinateUtils;
+import com.keyfluent.keyboard.latin.define.DebugFlags;
+import com.keyfluent.keyboard.latin.settings.DebugSettings;
+import com.keyfluent.keyboard.latin.settings.Defaults;
+import com.keyfluent.keyboard.latin.settings.Settings;
+import com.keyfluent.keyboard.latin.utils.KtxKt;
+import com.keyfluent.keyboard.latin.utils.LanguageOnSpacebarUtils;
+import com.keyfluent.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.TypefaceUtils;
 
 import java.util.ArrayList;
 import java.util.List;

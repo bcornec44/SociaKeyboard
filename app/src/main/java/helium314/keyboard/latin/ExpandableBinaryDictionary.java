@@ -4,28 +4,28 @@
  * SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
  */
 
-package helium314.keyboard.latin;
+package com.keyfluent.keyboard.latin;
 
 import android.content.Context;
-import helium314.keyboard.latin.utils.Log;
+import com.keyfluent.keyboard.latin.utils.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.android.inputmethod.latin.BinaryDictionary;
 
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.common.FileUtils;
-import helium314.keyboard.latin.define.DecoderSpecificConstants;
-import helium314.keyboard.latin.makedict.DictionaryHeader;
-import helium314.keyboard.latin.makedict.FormatSpec;
-import helium314.keyboard.latin.makedict.UnsupportedFormatException;
-import helium314.keyboard.latin.makedict.WordProperty;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
-import helium314.keyboard.latin.utils.AsyncResultHolder;
-import helium314.keyboard.latin.utils.CombinedFormatUtils;
-import helium314.keyboard.latin.utils.ExecutorUtils;
+import com.keyfluent.keyboard.latin.SuggestedWords.SuggestedWordInfo;
+import com.keyfluent.keyboard.latin.common.ComposedData;
+import com.keyfluent.keyboard.latin.common.FileUtils;
+import com.keyfluent.keyboard.latin.define.DecoderSpecificConstants;
+import com.keyfluent.keyboard.latin.makedict.DictionaryHeader;
+import com.keyfluent.keyboard.latin.makedict.FormatSpec;
+import com.keyfluent.keyboard.latin.makedict.UnsupportedFormatException;
+import com.keyfluent.keyboard.latin.makedict.WordProperty;
+import com.keyfluent.keyboard.latin.settings.SettingsValuesForSuggestion;
+import com.keyfluent.keyboard.latin.utils.AsyncResultHolder;
+import com.keyfluent.keyboard.latin.utils.CombinedFormatUtils;
+import com.keyfluent.keyboard.latin.utils.ExecutorUtils;
 
 import java.io.File;
 import java.util.ArrayList;

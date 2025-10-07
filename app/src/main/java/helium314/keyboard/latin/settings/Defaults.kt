@@ -1,20 +1,20 @@
-package helium314.keyboard.latin.settings
+package com.keyfluent.keyboard.latin.settings
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.util.TypedValue
 import android.view.Gravity
-import helium314.keyboard.keyboard.KeyboardTheme
-import helium314.keyboard.latin.BuildConfig
-import helium314.keyboard.latin.common.Constants.Separators
-import helium314.keyboard.latin.common.Constants.Subtype.ExtraValue
-import helium314.keyboard.latin.utils.LayoutType
-import helium314.keyboard.latin.utils.POPUP_KEYS_LABEL_DEFAULT
-import helium314.keyboard.latin.utils.POPUP_KEYS_ORDER_DEFAULT
-import helium314.keyboard.latin.utils.defaultClipboardToolbarPref
-import helium314.keyboard.latin.utils.defaultPinnedToolbarPref
-import helium314.keyboard.latin.utils.defaultToolbarPref
+import com.keyfluent.keyboard.keyboard.KeyboardTheme
+import com.keyfluent.keyboard.latin.BuildConfig
+import com.keyfluent.keyboard.latin.common.Constants.Separators
+import com.keyfluent.keyboard.latin.common.Constants.Subtype.ExtraValue
+import com.keyfluent.keyboard.latin.utils.LayoutType
+import com.keyfluent.keyboard.latin.utils.POPUP_KEYS_LABEL_DEFAULT
+import com.keyfluent.keyboard.latin.utils.POPUP_KEYS_ORDER_DEFAULT
+import com.keyfluent.keyboard.latin.utils.defaultClipboardToolbarPref
+import com.keyfluent.keyboard.latin.utils.defaultPinnedToolbarPref
+import com.keyfluent.keyboard.latin.utils.defaultToolbarPref
 
 object Defaults {
     fun initDynamicDefaults(context: Context) {
