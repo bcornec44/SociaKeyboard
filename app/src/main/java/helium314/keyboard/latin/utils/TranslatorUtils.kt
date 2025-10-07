@@ -23,7 +23,7 @@ object TranslatorUtils {
 
     // --- Suggestion API Connector functionality ---
     private val client = OkHttpClient()
-    private val baseUrl = "http://77.140.59.144:5000/api/Suggestion"
+    private val baseUrl = "https://api.bcornec.org/api/Suggestion"
 
 
     @JvmStatic
