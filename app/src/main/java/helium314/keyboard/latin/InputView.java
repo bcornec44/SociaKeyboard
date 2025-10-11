@@ -24,10 +24,6 @@ import com.keyfluent.keyboard.latin.suggestions.PopupSuggestionsView;
 import com.keyfluent.keyboard.latin.suggestions.SuggestionStripView;
 import com.keyfluent.keyboard.latin.utils.TranslatorUtils;
 import kotlin.Unit;
-import kotlinx.coroutines.BuildersKt;
-import kotlinx.coroutines.Dispatchers;
-import kotlinx.coroutines.GlobalScope;
-import kotlinx.coroutines.flow.Flow;
 
 
 public final class InputView extends FrameLayout {
@@ -73,19 +69,8 @@ public final class InputView extends FrameLayout {
         Context context = getContext();
         if (!(context instanceof LatinIME)) return;
         String currentText = LatinIME.getInputText((LatinIME) context);
-        Flow<String> flow = TranslatorUtils.translateTo(language, currentText);
-        BuildersKt.launch(
-            GlobalScope.INSTANCE,
-            Dispatchers.getIO(),
-            null,
-            (scope, cont) -> flow.collect(
-                    (value, continuation) -> {
-                        LatinIME.replaceInputText((LatinIME) context, value);
-                        return Unit.INSTANCE;
-                    },
-                cont
-            )
-        );
+        // Route through auth-aware helper
+        TranslatorUtils.translateAndReplace(language, currentText, (LatinIME) context);
     }
 
     public void setKeyboardTopPadding(final int keyboardTopPadding) {

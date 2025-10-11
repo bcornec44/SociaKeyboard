@@ -124,6 +124,10 @@ dependencies {
     implementation("sh.calvin.reorderable:reorderable:2.4.3") // for easier re-ordering
     implementation("com.github.skydoves:colorpicker-compose:1.1.2") // for user-defined colors
 
+    // Google Sign-In for ID tokens
+    implementation("com.google.android.gms:play-services-auth:21.3.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
+
     // test
     testImplementation(kotlin("test"))
     testImplementation("junit:junit:4.13.2")

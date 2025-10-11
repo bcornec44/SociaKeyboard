@@ -12,3 +12,8 @@
 # after upgrading to gradle 8, stack traces contain "unknown source"
 -keepattributes SourceFile,LineNumberTable
 -dontobfuscate
+
+# Keep Google Sign-In / Play Services auth classes
+-keep class com.google.android.gms.auth.api.signin.** { *; }
+-keep class com.google.android.gms.common.api.** { *; }
+-keep class com.google.android.gms.tasks.** { *; }

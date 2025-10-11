@@ -79,6 +79,15 @@ SPDX-License-Identifier: Apache-2.0 AND GPL-3.0-only
             </intent-filter>
         </activity>
 
+        <!-- Sign-in activity for Google authentication -->
+        <activity
+            android:name="com.keyfluent.keyboard.latin.utils.SignInActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:finishOnCloseSystemDialogs="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+
         <!-- Broadcast receivers -->
         <receiver android:name="SystemBroadcastReceiver"
                 android:exported="true">
