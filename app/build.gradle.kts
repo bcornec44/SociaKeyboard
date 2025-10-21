@@ -20,6 +20,12 @@ android {
             abiFilters.addAll(listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64"))
         }
         proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        // Expose Google Sign-In server client ID via BuildConfig for use in code
+        buildConfigField(
+            "String",
+            "GOOGLE_SIGN_IN_SERVER_CLIENT_ID",
+            "\"407408718192.apps.googleusercontent.com\""
+        )
     }
 
     buildTypes {

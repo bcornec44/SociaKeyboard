@@ -41,11 +41,12 @@ class SignInActivity : Activity() {
                 if (status == 10) {
                     // DEVELOPER_ERROR: usually package name / SHA-1 mismatch or wrong client IDs
                     val sha1 = getSigningSha1() ?: "(introuvable)"
+                    val serverClientId = AuthManager.getServerClientId()
                     // Copy helpful diagnostics to clipboard
                     val clipMgr = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                    val text = "Package: $packageName\nSHA1: $sha1\nserver_client_id: ${getString(com.keyfluent.keyboard.latin.R.string.server_client_id)}"
+                    val text = "Package: $packageName\nSHA1: $sha1\nserver_client_id: $serverClientId"
                     clipMgr.setPrimaryClip(ClipData.newPlainText("GoogleSignIn diagnostics", text))
-                    Toast.makeText(this, "Erreur configuration (code 10). Infos copiées. Ajoutez le package et SHA-1 dans l'ID client Android, et utilisez un ID client Web valide.", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Erreur configuration (code 10). Infos copiées. Vérifiez l'ID client Web, le nom du package et le SHA-1.", Toast.LENGTH_LONG).show()
                 } else {
                     Toast.makeText(this, "Erreur connexion Google: ${e.message}", Toast.LENGTH_LONG).show()
                 }
